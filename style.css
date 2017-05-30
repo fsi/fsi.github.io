@@ -38,17 +38,21 @@ header img {
   width: 150px;
   height: 150px;
 }
+.contacts,
 .skills {
   width: 100%;
 }
+.contacts ul,
 .skills ul {
   margin: 0;
+  margin-bottom: 1em;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+.contacts li + li:before,
 .skills li + li:before {
   content: '—';
   margin-left: 5px;
