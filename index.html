@@ -1,1 +1,110 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Play:700" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+
+    <title>Иван Фирсов - резюме</title>
+  </head>
+  <body>
+
+    <header>
+      <img src="https://placehold.it/150x150" />
+      <h1>Фирсов Иван Александрович</h1>
+    </header>
+
+    <section class="skills">
+      <h2>Навыки</h2>
+      <ul>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Redux</li>
+        <li>Webpack</li>
+        <li>Node.js</li>
+        <li>Mongodb</li>
+        <li>Redis</li>
+        <li>SQL</li>
+        <li>RabbitMQ</li>
+        <li>Docker</li>
+      </ul>
+      <p>JavaScript — со всеми современными фишками - ES6/2016/2017/etc.</p>
+      <p>В работе использовал
+        <strong>ESLint</strong>,
+        <strong><a href="https://flow.org/">Flow</a></strong>,
+        <strong>Webpack</strong> и <strong>Rollup</strong>,
+        <strong>Babel</strong>,
+        библиотеки типа <strong>Ramda</strong> и <strong>Lodash</strong>.
+      </p>
+      <p>Английский язык — в достаточной для переписки и чтения документации и литературы степени.</p>
+    </section>
+
+    <section class="experience">
+      <h2>Опыт</h2>
+      <article>
+        <h3>OnlinePBX
+           <small>Ноябрь 2013 — Май 2017</small></h3>
+        <p>Занимался разработкой, архитектурой, изучением новых технологий (с целью понять, имеет ли смысл их использовать), менторством и обучением новых программистов.</p>
+        <p>Основные проекты:</p>
+        <ul>
+          <li>
+            <strong>Поддержка и разработка расширения для браузеров Chrome и Firefox.</strong>
+            Для Firefox расширение уже имелось, и надо было только его поддерживать.
+            Для Chrome расширение писалось с нуля с использованием <strong>angular.js</strong>         </li>
+          <li>
+            <strong>Разработка приложения для холодного обзвона.</strong>
+            Бэкэнд писался на <strong>PHP</strong>, фронтэнд — на <strong>jQuery</strong> и <strong>Bootstrap</strong>.
+            Приложение состояло из админской и операторской частей.
+            <br />
+            Впоследствии предпринималась попытка переписать фронт на <strong>angular.js</strong>, но ввиду малой популярности приложения его закрыли совсем.
+          </li>
+          <li>
+            <strong>Разработка виджета заказа обратного звонка для установки на сайты клиентов.</strong>
+            Бэкэнд писался на <strong>PHP</strong>, фронтэнд - на чистом JavaScript для ускорения загрузки. Сейчас, пожалуй, использовал бы для такого Preact.
+          </li>
+          <li>
+            <strong>Участие в разработке виджетов для amoCRM.</strong>
+            Не совсем моя заслуга, я лишь делал прототип.
+            В том виджете, который используется сейчас, моего кода нет.
+            <br />
+            Новую версию виджета (как раз на <strong>Preact</strong>) делала команда разработчиков с моим участием.
+            Для сборки последней использовался <strong>rollup</strong> ввиду требований к сторонним виджетам в amoCRM.
+          </li>
+          <li>
+            <strong>Разработка микросервисной платформы для новой версии onlinePBX.</strong>
+            Платформа на основе протокола AMQP 0-9-1, конкретно - <strong>RabbitMQ</strong>.
+            Протокол общения и <strong>node.js</strong> модуль для его реализации.
+            Приложения-микросервисы на <strong>node.js</strong>.
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="education">
+      <h2>Образование</h2>
+      <article>
+        <h3>УрФУ (бывш. УрГУ)
+          <small>Сентябрь 2004 — Июнь 2011</small></h3>
+        <p>Физический факультет (теперь Институт Естественных Наук).</p>
+        <p>Специальность: физик, диплом магистра физики.</p>
+        <p>Научной работой занимался на кафедре компьютерной физики.
+        Конкретно - первопринципным и полуэмпирическим моделированием физических свойств кристаллов.
+        Для этой задачи использовалось как собственное программное обеспечение, так и программы сторонних разработчиков.</p>
+        <p>В связи с этим мне приходилось писать скрипты на Python для облегчения пакетного запуска legacy программ на FORTRAN, а также для обработки полученных данных.
+        Также надо было отлаживать и дорабатывать некоторые из этих программ.</p>
+      </article>
+    </section>
+
+    <section class="about">
+      <h2>О себе</h2>
+      <p>29 лет, холост.</p>
+      <p>Увлекаюсь рисованием, музыкой и настольными играми.</p>
+    </section>
+    <hr />
+
+  </body>
+</html>
