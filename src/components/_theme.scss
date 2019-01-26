@@ -1,0 +1,16 @@
+/* Duotone color scheming:
+   Uses blossom as the revealing/stark color
+   Uses fade as the more prominent color
+*/
+$color-blossom: #da5f51;
+$color-fade: #848586;
+
+/* bg color is used for the background of the page
+   bg-alt is used for code-blocks etc
+*/
+$color-bg: #eee0cb;
+$color-bg-alt: #baa898;
+
+/* color of all the text on the page */
+$color-text: #280003;
+$color-headers: #280003;
