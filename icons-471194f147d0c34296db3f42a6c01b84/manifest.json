@@ -7,7 +7,7 @@
   "display": "minimal-ui",
   "orientation": "any",
   "start_url": "/",
-  "background_color": "#eee0cb",
+  "background_color": "#da5f51",
   "theme_color": "#da5f51",
   "icons": [
     {
