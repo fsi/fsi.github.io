@@ -31,7 +31,7 @@ module.exports = {
         developerUrl: 'https://fsis.site',
         lang: 'en-US',
         start_url: '/',
-        background: '#eee0cb',
+        background: '#da5f51',
         theme_color: '#da5f51',
         display: 'minimal-ui'
       }

@@ -35,12 +35,12 @@ const PostTemplate = ({ data, pageContext, location }) => {
       <BottomNav>
         <BottomNavItem>
           {previousPost && <Link to={previousPost.fields.slug} rel='prev'>
-            ‹ {previousPost.frontmatter.title}
+            ‹ {previousPost.frontmatter ? previousPost.frontmatter.title : 'Previous'}
           </Link>}
         </BottomNavItem>
         <BottomNavItem>
           {nextPost && <Link to={nextPost.fields.slug} rel='next'>
-            {nextPost.frontMatter.title} ›
+            {nextPost.frontmatter ? nextPost.frontmatter.title : 'Next'} ›
           </Link>}
         </BottomNavItem>
       </BottomNav>
