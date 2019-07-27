@@ -4,6 +4,7 @@
         url('Funtauna-Oblique.woff') format('woff');
     font-weight: normal;
     font-style: italic;
+    font-display: fallback;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
         url('Funtauna-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: fallback;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
         url('Funtauna-BoldOblique.woff') format('woff');
     font-weight: bold;
     font-style: italic;
+    font-display: fallback;
 }
 
 @font-face {
@@ -28,4 +31,5 @@
         url('Funtauna-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
