@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Funtauna';
+    src: url('Funtauna-Oblique.woff2') format('woff2'),
+        url('Funtauna-Oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Funtauna';
+    src: url('Funtauna-Bold.woff2') format('woff2'),
+        url('Funtauna-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Funtauna';
+    src: url('Funtauna-BoldOblique.woff2') format('woff2'),
+        url('Funtauna-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Funtauna';
+    src: url('Funtauna-Regular.woff2') format('woff2'),
+        url('Funtauna-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

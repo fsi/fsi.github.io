@@ -2,14 +2,19 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const PostHeader = styled.h3`
-  display: block;
+const PostHeader = styled.p`
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
   align-items: flex-start;
+  & > a { text-decoration: none; }
 `
 const PostHeaderDate = styled.small`
   font-size: 0.5em;
-  margin-left: 1em;
+  margin: 0 1em;
   opacity: 0.5;
+  min-width: 10em;
+  align-self: center;
   &:before {
     content: '[';
   }
@@ -25,7 +30,6 @@ export const Post = ({ title, link, excerpt, date }) => {
         <Link to={link}>{title || 'Untitled post'}</Link>
         <PostHeaderDate>{date}</PostHeaderDate>
       </PostHeader>
-      <p>{excerpt}</p>
     </article>
   )
 }

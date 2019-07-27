@@ -41,6 +41,9 @@ export const Header = (props) => {
         <LinkContainer>
           <strike><a href='/cv.en.html'>~/hire</a></strike>
         </LinkContainer>
+        <LinkContainer>
+          <Link to='/license' activeClassName='active'>~/license</Link>
+        </LinkContainer>
       </nav>
     </Wrapper>
   )

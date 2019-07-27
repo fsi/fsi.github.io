@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Header } from './Header'
 import { StaticQuery, graphql } from 'gatsby'
 
-import './layout.css'
+import './layout.scss'
 
 export const Layout = ({ children, location }) => (
   <StaticQuery

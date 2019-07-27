@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Serreria Sobria';
+    src: url('./SerreriaSobria.woff2') format('woff2'),
+        url('./SerreriaSobria.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+

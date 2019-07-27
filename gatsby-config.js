@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: 'gatsby-mdx',
       options: {
-        defaultLayouts: { default: path.resolve('./src/components/Layout.js') }
+        defaultLayouts: { default: path.resolve('./src/components/layout.js') }
       }
     },
     'gatsby-plugin-react-helmet',
@@ -53,6 +53,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-typography',
       options: {
+        omitGoogleFont: true,
         pathToConfigModule: 'src/config/typography'
       }
     },
