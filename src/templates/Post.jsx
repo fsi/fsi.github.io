@@ -21,10 +21,17 @@ const BottomNav = styled.ul`
 `
 const BottomNavItem = styled.li`
 `
+const FeedbackAside = styled.aside`
+  margin: 2rem 0 0;
+  font-size: 0.75rem;
+  opacity: 0.8;
+`
 
 const PostTemplate = ({ data, pageContext, location }) => {
   const post = data.mdx
   const { previousPost, nextPost } = pageContext
+
+  console.log('post', previousPost, nextPost, pageContext);
 
   return (
     <Layout location={location}>
@@ -44,6 +51,12 @@ const PostTemplate = ({ data, pageContext, location }) => {
           </Link>}
         </BottomNavItem>
       </BottomNav>
+      <FeedbackAside>
+        For feedback, open a github issue on the repo, or write to fsi2nd+site@gmail.com.<br />
+        {/* TODO: add protonmail address */}
+        {/* I also have a protonmail account, if that's your schtick<br /> */}
+        {/* TODO: add public key for feedback */}
+      </FeedbackAside>
     </Layout>
   )
 }
