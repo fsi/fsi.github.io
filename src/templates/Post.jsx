@@ -52,7 +52,8 @@ const PostTemplate = ({ data, pageContext, location }) => {
         </BottomNavItem>
       </BottomNav>
       <FeedbackAside>
-        For feedback, open a github issue on the repo, or write to fsi2nd+site@gmail.com.<br />
+        For feedback, <a href="https://github.com/fsi/fsi.github.io/issues/new">open an issue on the repo</a>,
+        or write to fsi2nd+site@gmail.com.<br />
         {/* TODO: add protonmail address */}
         {/* I also have a protonmail account, if that's your schtick<br /> */}
         {/* TODO: add public key for feedback */}
