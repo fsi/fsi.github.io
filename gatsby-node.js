@@ -3,6 +3,9 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
+const sharp = require('sharp')
+sharp.simd(false)
+sharp.cache(false)
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 

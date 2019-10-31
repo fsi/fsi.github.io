@@ -13,10 +13,20 @@ module.exports = {
     titleShort: '/'
   },
   plugins: [
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-mdx',
       options: {
-        defaultLayouts: { default: path.resolve('./src/components/layout.js') }
+        defaultLayouts: { default: path.resolve('./src/components/layout.js') },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 960,
+              backgroundColor: 'none'
+            }
+          }
+        ],
       }
     },
     'gatsby-plugin-react-helmet',
