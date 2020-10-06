@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://fsis.site/images/logo.png" />
+<title>Another digest | fsis.site 🐴</title>
+<meta name="title" content="Another digest" />
+<meta name="description" content="Aaand back to our regularly scheduled program. Speaking of programming&hellip;
+Programming   Rabbit holes
+TL;DR: how ubuntu generates its motd is weird (and pings their server once every 12 hours)
+  Funny quote
+ It&rsquo;s quite simple. PHP was not designed. It evolved, without a predator to remove bad mutations. &ndash; The_Sly_Marbo on reddit
+   Articles   Black hole &ldquo;so big it shouldn&rsquo;t exist&rdquo;
+Note: the title is quite click-baity." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Another digest" />
+<meta property="og:description" content="Aaand back to our regularly scheduled program. Speaking of programming&hellip;
+Programming   Rabbit holes
+TL;DR: how ubuntu generates its motd is weird (and pings their server once every 12 hours)
+  Funny quote
+ It&rsquo;s quite simple. PHP was not designed. It evolved, without a predator to remove bad mutations. &ndash; The_Sly_Marbo on reddit
+   Articles   Black hole &ldquo;so big it shouldn&rsquo;t exist&rdquo;
+Note: the title is quite click-baity." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://fsis.site/blog/2019-09-01/" />
+<meta property="og:image" content="http://fsis.site/images/logo.png"/>
+<meta property="article:published_time" content="2019-09-01T09:24:39+00:00" />
+<meta property="article:modified_time" content="2019-09-01T09:24:39+00:00" /><meta property="og:site_name" content="fsis.site 🐴" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://fsis.site/images/logo.png"/>
+
+<meta name="twitter:title" content="Another digest"/>
+<meta name="twitter:description" content="Aaand back to our regularly scheduled program. Speaking of programming&hellip;
+Programming   Rabbit holes
+TL;DR: how ubuntu generates its motd is weird (and pings their server once every 12 hours)
+  Funny quote
+ It&rsquo;s quite simple. PHP was not designed. It evolved, without a predator to remove bad mutations. &ndash; The_Sly_Marbo on reddit
+   Articles   Black hole &ldquo;so big it shouldn&rsquo;t exist&rdquo;
+Note: the title is quite click-baity."/>
+
+
+
+<meta itemprop="name" content="Another digest">
+<meta itemprop="description" content="Aaand back to our regularly scheduled program. Speaking of programming&hellip;
+Programming   Rabbit holes
+TL;DR: how ubuntu generates its motd is weird (and pings their server once every 12 hours)
+  Funny quote
+ It&rsquo;s quite simple. PHP was not designed. It evolved, without a predator to remove bad mutations. &ndash; The_Sly_Marbo on reddit
+   Articles   Black hole &ldquo;so big it shouldn&rsquo;t exist&rdquo;
+Note: the title is quite click-baity.">
+<meta itemprop="datePublished" content="2019-09-01T09:24:39+00:00" />
+<meta itemprop="dateModified" content="2019-09-01T09:24:39+00:00" />
+<meta itemprop="wordCount" content="307">
+<meta itemprop="image" content="http://fsis.site/images/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --color-brand: #da5f51;
+    --color-fade: #848586;
+    --color-background: #eee0cb;
+    --color-background-alt: #baa898;
+    --color-body-text: #280003;
+    --color-header-text: #da5f51;
+  }
+  @media(prefers-color-scheme: light) {
+    :root {
+      --color-brand: #da5f51;
+      --color-fade: #848586;
+      --color-background: #eee0cb;
+      --color-background-alt: #baa898;
+      --color-body-text: #280003;
+      --color-header-text: #da5f51;
+    }
+  }
+  @media(prefers-color-scheme: dark) {
+    :root {
+      --color-background: #280003;
+      --color-background-alt: #da5f51;
+      --color-body-text: #eee0cb;
+      --color-header-text: #da5f51;
+    }
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: var(--color-background);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--color-body-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--color-header-text);
+  }
+
+  a {
+    color: var(--color-brand);
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+    height: 100px;
+    z-index: 1;
+  }
+  h2.title {
+    margin: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  .back-title {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  main {
+    z-index: 1;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: var(--color-background-alt);
+  }
+
+  pre code {
+    color: var(--color-body-text);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  blockquote {
+    border-left: 1px solid var(--color-brand);
+    color: var(--color-body-text);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    font-size: 12px;
+  }
+
+  .helptext {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+  .errorlist {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--color-brand);
+  }
+</style>
+
+</head>
+
+<body>
+  <header><aside class="back-title">
+  fsis.site 🐴
+</aside>
+<h2 class="title">fsis.site 🐴</h2>
+<nav><a href="/">/home/fsi</a>
+
+<a href="/blog">./blog</a>
+
+
+<a href="/books/">./books</a>
+
+<a href="/links/">./links</a>
+
+<a href="/random/">./random</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Another digest</h1>
+<p>
+  <i>
+    <time datetime='2019-09-01' pubdate>
+      01 Sep, 2019
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Aaand back to our regularly scheduled program. Speaking of programming&hellip;</p>
+<h2 id="programming">Programming</h2>
+<ul>
+<li>
+<p><a href="http://blog.bityard.net/articles/2019/August/rabbit-holes-the-secret-to-technical-expertise.html">Rabbit holes</a></p>
+<p>TL;DR: how ubuntu generates its motd is <em>weird</em> (and pings their server once every 12 hours)</p>
+</li>
+<li>
+<p><a href="https://www.reddit.com/r/lolphp/comments/cwl72a/casts_are_not_sure_whether_theyre_a_single_token/eye8scd/">Funny quote</a></p>
+<blockquote>
+<p>It&rsquo;s quite simple. PHP was not <em>designed</em>. It <em>evolved</em>, without a predator to remove bad mutations.
+&ndash; <a href="https://www.reddit.com/user/The_Sly_Marbo">The_Sly_Marbo on reddit</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="articles">Articles</h2>
+<ul>
+<li>
+<p><a href="https://www.quantamagazine.org/possible-detection-of-a-black-hole-so-big-it-should-not-exist-20190828/">Black hole &ldquo;so big it shouldn&rsquo;t exist&rdquo;</a></p>
+<p>Note: the title is quite click-baity.
+It&rsquo;s not that the black hole is exceptionally big, it&rsquo;s just that black holes of this particular size were supposed to be near-impossible to encounter (only smaller or larger ones).</p>
+</li>
+<li>
+<p><a href="http://blairreeves.me/2019/08/20/the-browser-monopoly/">The Browser Monopoly</a></p>
+<p>TL;DR: use Firefox</p>
+</li>
+<li>
+<p><a href="http://pespmc1.vub.ac.be/books/Conant_Ashby.pdf">Every good regulator of a system must be a model of that system (pdf)</a></p>
+<p>(a paper from 1970, from <a href="https://news.ycombinator.com/item?id=20761459">hackernews</a>)</p>
+</li>
+<li>
+<p><a href="https://www.newyorker.com/magazine/2019/09/02/are-spies-more-trouble-than-theyre-worth">Are Spies More Trouble Than They&rsquo;re Worth?</a></p>
+<p>(TW: New Yorker, paywall)</p>
+<p>I liked the part about LSD and MK ULTRA, and will probably read the book at some point.
+There&rsquo;s also a nice idea that when you start to use underhanded techniques you also start to see (or &ldquo;see&rdquo;) other people around you use them (or, at least, so it appears to you), thus undermining the profit you might&rsquo;ve had.</p>
+</li>
+<li>
+<p><a href="https://spectrum.ieee.org/biomedical/imaging/how-to-teach-an-iris-scanner-that-the-eye-its-looking-at-is-dead">How to Teach an Iris Scanner That the Eye It’s Looking at Is Dead</a></p>
+<p>Favorite quote:</p>
+<blockquote>
+<p>Conventional wisdom has held that the iris begins decaying only minutes after death. Thanks to Maciejewicz’s work, we discovered that wisdom to be wrong: If cadavers are kept cool, the eyes can still be used for identification for up to three weeks postmortem</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="useful-stuff">Useful stuff</h2>
+<ul>
+<li><a href="http://nactape.com/anablog/cassette-order-instructions/j-card-templates">Audio cassette J-card and O-card templates</a></li>
+</ul>
+<h2 id="art">Art</h2>
+<ul>
+<li>
+<p><a href="https://twitter.com/tanaka_tatsuya/status/1164343069593833475">Miniature calendar</a></p>
+<p>This twitter account posts a miniature photo every day. Very cute.</p>
+</li>
+<li>
+<p><a href="https://paveldogreat.github.io/WebGL-Fluid-Simulation/">Very trippy WebGL fluid simulation</a></p>
+</li>
+<li>
+<p><a href="https://www.dailymail.co.uk/news/article-6276909/Haunting-photographs-Victorian-patients-banished-asylums.html">Colorized pictures of Victorian asylum <strike>
+  victims
+</strike>patients</a></p>
+<p>(TW: Daily Mail) (also TW: may cause severe <em>feels</em>)</p>
+</li>
+<li>
+<p><a href="https://youtu.be/vd7lvtegkYI">Burning oil with half-life SFX</a></p>
+<p>THIS IS ART IF I SAY IT IS ART</p>
+</li>
+</ul>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><small>Copyright © 2020, FSi</small>
+<br />
+Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

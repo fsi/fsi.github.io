@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://fsis.site/images/logo.png" />
+<title>Can&#39;t unsee these insecure Wordpress plugins | fsis.site 🐴</title>
+<meta name="title" content="Can&#39;t unsee these insecure Wordpress plugins" />
+<meta name="description" content="Programming   Water is still wet. In other news, wordpress plugin ecosystem is still trash a ball of slimy writhing unspeakable horrors.
+ one two hackernews discussion  TL;DR: If you ever used anything from these &ldquo;pipdig&rdquo; guys on your wordpress or blogger site, please stop asap.
+I personally recommend switching to Hugo instead (do as I say, not as I do; you generally don&rsquo;t need the complexity of Gatsby)." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Can&#39;t unsee these insecure Wordpress plugins" />
+<meta property="og:description" content="Programming   Water is still wet. In other news, wordpress plugin ecosystem is still trash a ball of slimy writhing unspeakable horrors.
+ one two hackernews discussion  TL;DR: If you ever used anything from these &ldquo;pipdig&rdquo; guys on your wordpress or blogger site, please stop asap.
+I personally recommend switching to Hugo instead (do as I say, not as I do; you generally don&rsquo;t need the complexity of Gatsby)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://fsis.site/blog/2019-04-09/" />
+<meta property="og:image" content="http://fsis.site/images/logo.png"/>
+<meta property="article:published_time" content="2019-04-09T12:00:00+00:00" />
+<meta property="article:modified_time" content="2019-04-09T12:00:00+00:00" /><meta property="og:site_name" content="fsis.site 🐴" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://fsis.site/images/logo.png"/>
+
+<meta name="twitter:title" content="Can&#39;t unsee these insecure Wordpress plugins"/>
+<meta name="twitter:description" content="Programming   Water is still wet. In other news, wordpress plugin ecosystem is still trash a ball of slimy writhing unspeakable horrors.
+ one two hackernews discussion  TL;DR: If you ever used anything from these &ldquo;pipdig&rdquo; guys on your wordpress or blogger site, please stop asap.
+I personally recommend switching to Hugo instead (do as I say, not as I do; you generally don&rsquo;t need the complexity of Gatsby)."/>
+
+
+
+<meta itemprop="name" content="Can&#39;t unsee these insecure Wordpress plugins">
+<meta itemprop="description" content="Programming   Water is still wet. In other news, wordpress plugin ecosystem is still trash a ball of slimy writhing unspeakable horrors.
+ one two hackernews discussion  TL;DR: If you ever used anything from these &ldquo;pipdig&rdquo; guys on your wordpress or blogger site, please stop asap.
+I personally recommend switching to Hugo instead (do as I say, not as I do; you generally don&rsquo;t need the complexity of Gatsby).">
+<meta itemprop="datePublished" content="2019-04-09T12:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-04-09T12:00:00+00:00" />
+<meta itemprop="wordCount" content="325">
+<meta itemprop="image" content="http://fsis.site/images/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --color-brand: #da5f51;
+    --color-fade: #848586;
+    --color-background: #eee0cb;
+    --color-background-alt: #baa898;
+    --color-body-text: #280003;
+    --color-header-text: #da5f51;
+  }
+  @media(prefers-color-scheme: light) {
+    :root {
+      --color-brand: #da5f51;
+      --color-fade: #848586;
+      --color-background: #eee0cb;
+      --color-background-alt: #baa898;
+      --color-body-text: #280003;
+      --color-header-text: #da5f51;
+    }
+  }
+  @media(prefers-color-scheme: dark) {
+    :root {
+      --color-background: #280003;
+      --color-background-alt: #da5f51;
+      --color-body-text: #eee0cb;
+      --color-header-text: #da5f51;
+    }
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: var(--color-background);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--color-body-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--color-header-text);
+  }
+
+  a {
+    color: var(--color-brand);
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+    height: 100px;
+    z-index: 1;
+  }
+  h2.title {
+    margin: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  .back-title {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  main {
+    z-index: 1;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: var(--color-background-alt);
+  }
+
+  pre code {
+    color: var(--color-body-text);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  blockquote {
+    border-left: 1px solid var(--color-brand);
+    color: var(--color-body-text);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    font-size: 12px;
+  }
+
+  .helptext {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+  .errorlist {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--color-brand);
+  }
+</style>
+
+</head>
+
+<body>
+  <header><aside class="back-title">
+  fsis.site 🐴
+</aside>
+<h2 class="title">fsis.site 🐴</h2>
+<nav><a href="/">/home/fsi</a>
+
+<a href="/blog">./blog</a>
+
+
+<a href="/books/">./books</a>
+
+<a href="/links/">./links</a>
+
+<a href="/random/">./random</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Can&#39;t unsee these insecure Wordpress plugins</h1>
+<p>
+  <i>
+    <time datetime='2019-04-09' pubdate>
+      09 Apr, 2019
+    </time>
+  </i>
+</p>
+
+<content>
+  <h2 id="programming">Programming</h2>
+<ul>
+<li>
+<p>Water is still wet. In other news, wordpress plugin ecosystem is still <del>trash</del> a ball of slimy writhing unspeakable horrors.</p>
+<ul>
+<li><a href="https://www.jemjabella.co.uk/2019/security-alert-pipdig-insecure-ddosing-competitors/">one</a></li>
+<li><a href="https://www.wordfence.com/blog/2019/03/peculiar-php-present-in-popular-pipdig-power-pack-plugin/">two</a></li>
+<li><a href="https://news.ycombinator.com/item?id=19538779">hackernews discussion</a></li>
+</ul>
+<p>TL;DR: If you ever used anything from these &ldquo;pipdig&rdquo; guys on your wordpress or blogger site, please stop asap.</p>
+<p>I personally recommend switching to <a href="https://gohugo.io/">Hugo</a> instead
+(do as I say, not as I do; you generally don&rsquo;t need the complexity of Gatsby).</p>
+</li>
+<li>
+<p>Just throwing it out there:
+<a href="https://www.linuxjournal.com/content/disk-encryption-low-end-hardware">Disk encryption for low-end hardware</a>, Linux Journal</p>
+</li>
+</ul>
+<h2 id="articles">Articles</h2>
+<ul>
+<li>
+<p><a href="http://www.lbatalha.com/blog/feynman-on-fermats-last-theorem">Feynman on Fermat&rsquo;s Last Theorem</a></p>
+<p>TL;DR: Richard Feynman once proved that the probability of Fermat&rsquo;s Last Theorem to be true is less than 10<sup>
+  –31
+</sup>% and concluded: &ldquo;for my money Fermat’s theorem is true&rdquo;.</p>
+</li>
+<li>
+<p><a href="https://www.nytimes.com/2019/02/07/opinion/what-these-grammy-songs-tell-us-about-the-loudness-wars.html">They Really Don’t Make Music Like They Used To</a></p>
+<p>TL;DR: &ldquo;Loudness wars&rdquo; history and analysis;
+and also why a release sometimes sounds way better on a vinyl record even though technically a CD has much wider dynamic range.
+(spoiler: it&rsquo;s usually sacrificed to make the album sound louder)</p>
+</li>
+<li>
+<p><a href="https://www.supercluster.com/editorial/meet-the-amateur-astronomers-hunting-for-spy-satellites">Astronomers hunting for the spy satellites</a></p>
+</li>
+</ul>
+<h2 id="music">Music</h2>
+<ul>
+<li>
+<p><a href="https://auasca.bandcamp.com/album/skyminds">Skyminds by Skyminds</a> (available digitally and on cassette from <em>auasca</em>)</p>
+<p>Quite pleasant drone/ambient with some bluesy/desert rock kind of tunes.</p>
+<p>&ldquo;Desert Winds&rdquo; track reminds me of Fallout 2 a bit, so there&rsquo;s that.</p>
+</li>
+</ul>
+<h2 id="art-also-music">Art, also music</h2>
+<ul>
+<li>
+<p><a href="https://www.loudersound.com/features/this-is-what-it-sounds-like-when-you-play-every-motorhead-song-at-once">This is what it sounds like when you play all 265 Motorhead songs at the same time</a></p>
+<p>TL;DL: Just as you imagine</p>
+</li>
+</ul>
+<h2 id="games">Games</h2>
+<ul>
+<li>
+<p><a href="https://www.nexusmods.com/tesarena/mods/1">TES Arena Remapped</a></p>
+<p>This may sound like a custom maps set for TES: Arena, but it is not.</p>
+<p>In fact it&rsquo;s just a custom keyboard map for DosBOX to get modern WASD-style controls etc.</p>
+</li>
+<li>
+<p><a href="https://cantunsee.space/">Can&rsquo;t Unsee</a></p>
+</li>
+</ul>
+<h2 id="books">Books</h2>
+<ul>
+<li>
+<p>Martian Time-Slip by Philip K. Dick</p>
+<p>Starts as silly Mars colonization sci-fi, ends up deep in scizophrenia and mindfuckery. Exactly what I like to read.</p>
+</li>
+<li>
+<p>How We&rsquo;ll Live on Mars by Stephen L. Petranek</p>
+<p>And for something (a bit) more realistic, here&rsquo;s this TED Book about future Mars colonisation (already dated, even though it was published in 2014 iirc).</p>
+</li>
+</ul>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><small>Copyright © 2020, FSi</small>
+<br />
+Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

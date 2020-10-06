@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://fsis.site/images/logo.png" />
+<title>The best medieval snails rendering bicycle supernests in human skin | fsis.site 🐴</title>
+<meta name="title" content="The best medieval snails rendering bicycle supernests in human skin" />
+<meta name="description" content="Programming   The Best Refactoring You&rsquo;ve Never Heard Of
+TL;DR: defunctionalize the continuation!
+  The PGP Problem
+TL;DR: no solution in sight (just &ldquo;use signal&rdquo; is not a solution).
+Neat quote:
+ Take AEAD ciphers: the Rust-language Sequoia PGP defaulted to the AES-EAX AEAD mode, which is great, and nobody can read those messages because most PGP installs don’t know what EAX mode is, which is not great" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="The best medieval snails rendering bicycle supernests in human skin" />
+<meta property="og:description" content="Programming   The Best Refactoring You&rsquo;ve Never Heard Of
+TL;DR: defunctionalize the continuation!
+  The PGP Problem
+TL;DR: no solution in sight (just &ldquo;use signal&rdquo; is not a solution).
+Neat quote:
+ Take AEAD ciphers: the Rust-language Sequoia PGP defaulted to the AES-EAX AEAD mode, which is great, and nobody can read those messages because most PGP installs don’t know what EAX mode is, which is not great" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://fsis.site/blog/2019-07-21/" />
+<meta property="og:image" content="http://fsis.site/images/logo.png"/>
+<meta property="article:published_time" content="2019-07-21T13:27:41+00:00" />
+<meta property="article:modified_time" content="2019-07-21T13:27:41+00:00" /><meta property="og:site_name" content="fsis.site 🐴" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://fsis.site/images/logo.png"/>
+
+<meta name="twitter:title" content="The best medieval snails rendering bicycle supernests in human skin"/>
+<meta name="twitter:description" content="Programming   The Best Refactoring You&rsquo;ve Never Heard Of
+TL;DR: defunctionalize the continuation!
+  The PGP Problem
+TL;DR: no solution in sight (just &ldquo;use signal&rdquo; is not a solution).
+Neat quote:
+ Take AEAD ciphers: the Rust-language Sequoia PGP defaulted to the AES-EAX AEAD mode, which is great, and nobody can read those messages because most PGP installs don’t know what EAX mode is, which is not great"/>
+
+
+
+<meta itemprop="name" content="The best medieval snails rendering bicycle supernests in human skin">
+<meta itemprop="description" content="Programming   The Best Refactoring You&rsquo;ve Never Heard Of
+TL;DR: defunctionalize the continuation!
+  The PGP Problem
+TL;DR: no solution in sight (just &ldquo;use signal&rdquo; is not a solution).
+Neat quote:
+ Take AEAD ciphers: the Rust-language Sequoia PGP defaulted to the AES-EAX AEAD mode, which is great, and nobody can read those messages because most PGP installs don’t know what EAX mode is, which is not great">
+<meta itemprop="datePublished" content="2019-07-21T13:27:41+00:00" />
+<meta itemprop="dateModified" content="2019-07-21T13:27:41+00:00" />
+<meta itemprop="wordCount" content="403">
+<meta itemprop="image" content="http://fsis.site/images/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --color-brand: #da5f51;
+    --color-fade: #848586;
+    --color-background: #eee0cb;
+    --color-background-alt: #baa898;
+    --color-body-text: #280003;
+    --color-header-text: #da5f51;
+  }
+  @media(prefers-color-scheme: light) {
+    :root {
+      --color-brand: #da5f51;
+      --color-fade: #848586;
+      --color-background: #eee0cb;
+      --color-background-alt: #baa898;
+      --color-body-text: #280003;
+      --color-header-text: #da5f51;
+    }
+  }
+  @media(prefers-color-scheme: dark) {
+    :root {
+      --color-background: #280003;
+      --color-background-alt: #da5f51;
+      --color-body-text: #eee0cb;
+      --color-header-text: #da5f51;
+    }
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: var(--color-background);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--color-body-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--color-header-text);
+  }
+
+  a {
+    color: var(--color-brand);
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+    height: 100px;
+    z-index: 1;
+  }
+  h2.title {
+    margin: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  .back-title {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  main {
+    z-index: 1;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: var(--color-background-alt);
+  }
+
+  pre code {
+    color: var(--color-body-text);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  blockquote {
+    border-left: 1px solid var(--color-brand);
+    color: var(--color-body-text);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    font-size: 12px;
+  }
+
+  .helptext {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+  .errorlist {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--color-brand);
+  }
+</style>
+
+</head>
+
+<body>
+  <header><aside class="back-title">
+  fsis.site 🐴
+</aside>
+<h2 class="title">fsis.site 🐴</h2>
+<nav><a href="/">/home/fsi</a>
+
+<a href="/blog">./blog</a>
+
+
+<a href="/books/">./books</a>
+
+<a href="/links/">./links</a>
+
+<a href="/random/">./random</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>The best medieval snails rendering bicycle supernests in human skin</h1>
+<p>
+  <i>
+    <time datetime='2019-07-21' pubdate>
+      21 Jul, 2019
+    </time>
+  </i>
+</p>
+
+<content>
+  <h2 id="programming">Programming</h2>
+<ul>
+<li>
+<p><a href="http://www.pathsensitive.com/2019/07/the-best-refactoring-youve-never-heard.html">The Best Refactoring You&rsquo;ve Never Heard Of</a></p>
+<p>TL;DR: defunctionalize the continuation!</p>
+</li>
+<li>
+<p><a href="https://latacora.micro.blog/2019/07/16/the-pgp-problem.html">The PGP Problem</a></p>
+<p>TL;DR: no solution in sight (just &ldquo;use signal&rdquo; is not a solution).</p>
+<p>Neat quote:</p>
+<blockquote>
+<p>Take AEAD ciphers: the Rust-language Sequoia PGP defaulted to the AES-EAX AEAD mode, which is great, and nobody can read those messages because most PGP installs don’t know what EAX mode is, which is not great</p>
+</blockquote>
+</li>
+<li>
+<p><a href="https://github.com/tenox7/wrp">Web Rendering Proxy</a>, <a href="https://www.youtube.com/watch?v=3mbd9qEzU5Q">youtube</a></p>
+<p>An idea so horrible it works: this makes modern websites work on almost any browser (e.g. IE 1.5, of all things) by rendering them server-side and providing the browser with a GIF <code>ismap</code> image.</p>
+</li>
+</ul>
+<h2 id="articles">Articles</h2>
+<ul>
+<li>
+<p><a href="https://rootsofprogress.org/why-did-we-wait-so-long-for-the-bicycle">Why did we wait so long for the bicycle?</a></p>
+<p>Some nice pictures of early bicycles, tricycles and unicycles there.</p>
+</li>
+<li>
+<p><a href="https://www.seas.harvard.edu/news/2019/07/material-way-to-make-mars-habitable">A material way to make Mars habitable</a></p>
+<p>TL;DR: silica gel greenhouses; this approach is localized, and thus way more achievable than the global terraforming projects</p>
+</li>
+<li>
+<p><a href="https://twitter.com/JayHulmePoet/status/1151102237302820864">Book bound in human skin</a> <a href="https://threadreaderapp.com/thread/1151102237302820864.html">(threadreader)</a> <a href="https://archive.fo/yj3ah">(archive link)</a></p>
+</li>
+<li>
+<p><a href="http://www.bldgblog.com/2019/06/supernester/">Supernester</a></p>
+<p>TL;DR: due to global warming, the wasps have started to build so called <em>super nests</em> which look as creepy as you&rsquo;d imagine.</p>
+</li>
+</ul>
+<h2 id="music">Music</h2>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=nWDITMZW1XE">5 Composers, 1 Theme (youtube)</a></p>
+<p>This just kind of appeared in my recommendations, and I was not disappointed. 5 composers were asked to orchestrate a (somewhat silly) theme for a given orchestra. The results are quite different, and I liked them all.</p>
+</li>
+<li>
+<p><a href="https://strudelsoft.bandcamp.com/album/summer-insomnia">Agnar - Summer Insomnia</a></p>
+<p>Speaking of floppycasts, here&rsquo;s a floppy album! In fact, a whole label of these <code>._.</code></p>
+<p>(I happen to have one floppy music album myself, it&rsquo;s a split disk by two local grindcore bands, with total playtime of 36 seconds)</p>
+</li>
+</ul>
+<h2 id="books">Books</h2>
+<ul>
+<li>
+<p><a href="https://archive.org/details/throughfirstan00cook">Through the First Antarctic Night by Frederick Albert Cook (1900)</a> (via <a href="https://publicdomainreview.org/collections/through-the-first-antarctic-night-1900/">public domain review</a>)</p>
+<p>Not that I&rsquo;m gonna read this, but at least I enjoyed the article</p>
+</li>
+<li>
+<p><a href="https://www.goodreads.com/book/show/5456216-decoding-the-heavens">Jo Marchant - Decoding the Heavens (2009)</a></p>
+<p>And for something a bit different, here&rsquo;s a book that I just read. It was quite a fun read, although there could probably be a bit more mechanic and engineering parts. Still, it is very brief and easy read on the history of decoding of the ancient Greek Antikythera Mechanism, and I have enjoyed it a lot.</p>
+<p>(NB: goodreads link is for the English version, while I was reading the Russian translation)</p>
+</li>
+</ul>
+<h2 id="art">Art</h2>
+<ul>
+<li>
+<p><a href="https://twitter.com/erik_kaars/status/1151409334666125312">Medieval snails</a> <a href="https://threadreaderapp.com/thread/1151409334666125312.html">(threadreader)</a></p>
+</li>
+<li>
+<p><a href="http://rockybergen.com/papercraft">Retro computers papercraft</a></p>
+<p>These are cute!</p>
+<p>Also, <a href="https://i.imgur.com/btqPhhU.jpg">here&rsquo;s my cruddy attempt at putting one of these together</a>. I may have folded the C64 part wrong, bite me.</p>
+</li>
+</ul>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><small>Copyright © 2020, FSi</small>
+<br />
+Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://fsis.site/images/logo.png" />
+<title>Live-coding long-term lewd asshole torture storage | fsis.site 🐴</title>
+<meta name="title" content="Live-coding long-term lewd asshole torture storage" />
+<meta name="description" content="Programming   Live coding a vi for CP/M, from scratch
+  Somewhat related (and ancient), Linux on an 8-bit micro by emulating an ARM processor, no less! (slower than molasses, obviously, like, literally, hours to boot)
+  Also related, Why 80s BASIC still matters! - this made me want to buy the book, and I probably will.
+  Articles   Inside the World&rsquo;s First Long-term Storage Facility for Highly Radioactive Nuclear Waste" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Live-coding long-term lewd asshole torture storage" />
+<meta property="og:description" content="Programming   Live coding a vi for CP/M, from scratch
+  Somewhat related (and ancient), Linux on an 8-bit micro by emulating an ARM processor, no less! (slower than molasses, obviously, like, literally, hours to boot)
+  Also related, Why 80s BASIC still matters! - this made me want to buy the book, and I probably will.
+  Articles   Inside the World&rsquo;s First Long-term Storage Facility for Highly Radioactive Nuclear Waste" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://fsis.site/blog/2019-07-09/" />
+<meta property="og:image" content="http://fsis.site/images/logo.png"/>
+<meta property="article:published_time" content="2019-07-09T18:35:52+00:00" />
+<meta property="article:modified_time" content="2019-07-09T18:35:52+00:00" /><meta property="og:site_name" content="fsis.site 🐴" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://fsis.site/images/logo.png"/>
+
+<meta name="twitter:title" content="Live-coding long-term lewd asshole torture storage"/>
+<meta name="twitter:description" content="Programming   Live coding a vi for CP/M, from scratch
+  Somewhat related (and ancient), Linux on an 8-bit micro by emulating an ARM processor, no less! (slower than molasses, obviously, like, literally, hours to boot)
+  Also related, Why 80s BASIC still matters! - this made me want to buy the book, and I probably will.
+  Articles   Inside the World&rsquo;s First Long-term Storage Facility for Highly Radioactive Nuclear Waste"/>
+
+
+
+<meta itemprop="name" content="Live-coding long-term lewd asshole torture storage">
+<meta itemprop="description" content="Programming   Live coding a vi for CP/M, from scratch
+  Somewhat related (and ancient), Linux on an 8-bit micro by emulating an ARM processor, no less! (slower than molasses, obviously, like, literally, hours to boot)
+  Also related, Why 80s BASIC still matters! - this made me want to buy the book, and I probably will.
+  Articles   Inside the World&rsquo;s First Long-term Storage Facility for Highly Radioactive Nuclear Waste">
+<meta itemprop="datePublished" content="2019-07-09T18:35:52+00:00" />
+<meta itemprop="dateModified" content="2019-07-09T18:35:52+00:00" />
+<meta itemprop="wordCount" content="171">
+<meta itemprop="image" content="http://fsis.site/images/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --color-brand: #da5f51;
+    --color-fade: #848586;
+    --color-background: #eee0cb;
+    --color-background-alt: #baa898;
+    --color-body-text: #280003;
+    --color-header-text: #da5f51;
+  }
+  @media(prefers-color-scheme: light) {
+    :root {
+      --color-brand: #da5f51;
+      --color-fade: #848586;
+      --color-background: #eee0cb;
+      --color-background-alt: #baa898;
+      --color-body-text: #280003;
+      --color-header-text: #da5f51;
+    }
+  }
+  @media(prefers-color-scheme: dark) {
+    :root {
+      --color-background: #280003;
+      --color-background-alt: #da5f51;
+      --color-body-text: #eee0cb;
+      --color-header-text: #da5f51;
+    }
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: var(--color-background);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--color-body-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--color-header-text);
+  }
+
+  a {
+    color: var(--color-brand);
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+    height: 100px;
+    z-index: 1;
+  }
+  h2.title {
+    margin: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  .back-title {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  main {
+    z-index: 1;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: var(--color-background-alt);
+  }
+
+  pre code {
+    color: var(--color-body-text);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  blockquote {
+    border-left: 1px solid var(--color-brand);
+    color: var(--color-body-text);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    font-size: 12px;
+  }
+
+  .helptext {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+  .errorlist {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--color-brand);
+  }
+</style>
+
+</head>
+
+<body>
+  <header><aside class="back-title">
+  fsis.site 🐴
+</aside>
+<h2 class="title">fsis.site 🐴</h2>
+<nav><a href="/">/home/fsi</a>
+
+<a href="/blog">./blog</a>
+
+
+<a href="/books/">./books</a>
+
+<a href="/links/">./links</a>
+
+<a href="/random/">./random</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Live-coding long-term lewd asshole torture storage</h1>
+<p>
+  <i>
+    <time datetime='2019-07-09' pubdate>
+      09 Jul, 2019
+    </time>
+  </i>
+</p>
+
+<content>
+  <h2 id="programming">Programming</h2>
+<ul>
+<li>
+<p><a href="http://cowlark.com/2019-06-28-cpm-vi/">Live coding a vi for CP/M, from scratch</a></p>
+</li>
+<li>
+<p>Somewhat related (and ancient), <a href="https://dmitry.gr/?r=05.Projects&amp;proj=07.%20Linux%20on%208bit">Linux on an 8-bit micro</a>
+by emulating an ARM processor, no less! (slower than molasses, obviously, like, literally, hours to boot)</p>
+</li>
+<li>
+<p>Also related, <a href="https://blog.usejournal.com/why-80s-basic-still-matters-1c17de5768fa">Why 80s BASIC still matters!</a> - this made me want to buy the book, and I probably will.</p>
+</li>
+</ul>
+<h2 id="articles">Articles</h2>
+<ul>
+<li>
+<p><a href="https://psmag.com/ideas/the-hiding-place-inside-the-worlds-first-long-term-storage-facility-for-highly-radioactive-nuclear-waste">Inside the World&rsquo;s First Long-term Storage Facility for Highly Radioactive Nuclear Waste</a></p>
+<p>Some nice photos there.</p>
+</li>
+<li>
+<p><a href="https://www.scientificamerican.com/article/we-rsquo-ve-known-for-400-years-that-torture-doesn-rsquo-t-work/">Why torture doesn&rsquo;t work</a></p>
+<p>Quite an obvious one, in retrospect; still, horrible how many people get this wrong to this day.</p>
+</li>
+<li>
+<p><a href="https://publicdomainreview.org/2019/04/17/tales-from-the-boghouse/">Loos, Lewdness, and Literature: Tales from the Boghouse</a></p>
+<p>TL;DR: a review of an 18th century anthology of toilet poetry. Quite brave for the time!</p>
+</li>
+<li>
+<p><a href="https://www.sciencemag.org/news/2019/06/space-station-mold-survives-200-times-radiation-dose-would-kill-human">Space station mold can survive a lot of radiation</a></p>
+<p>Oh well, and there goes Gerard O&rsquo;Neill&rsquo;s suggestion to sterilize everything that goes to space cylinder colonies to avoid dangerous bacteria and organisms. <em>Life, uh, finds a way</em>, so to say.</p>
+</li>
+<li>
+<p><a href="https://www.nomachetejuggling.com/2019/06/03/dont-hire-assholes/">Don&rsquo;t Hire Assholes</a></p>
+<p>TL;DR: there&rsquo;s also ways to un-asshole some assholes</p>
+</li>
+</ul>
+<h2 id="art">Art</h2>
+<ul>
+<li><a href="https://www.flickr.com/photos/philwinter/17294433518">Pied wagtail (photo)</a></li>
+</ul>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><small>Copyright © 2020, FSi</small>
+<br />
+Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>./links on fsis.site 🐴</title>
+    <link>http://fsis.site/links/</link>
+    <description>Recent content in ./links on fsis.site 🐴</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2020, FSi</copyright>
+    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://fsis.site/links/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links from 2020-06-19</title>
+      <link>http://fsis.site/links/20200619144021/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://fsis.site/links/20200619144021/</guid>
+      <description>Links from 2020-06-19  Advice to young web developers, beesbuzz.biz On cultures that build, scholars-stage.blogspot.com  </description>
+    </item>
+    
+    <item>
+      <title>links/webrings</title>
+      <link>http://fsis.site/links/webrings/</link>
+      <pubDate>Thu, 01 Jan 1970 05:00:00 +0500</pubDate>
+      
+      <guid>http://fsis.site/links/webrings/</guid>
+      <description>links/webrings Links to other collections of links
+unchecked Still have to check these
+ welcome to dreamwiki https://webring.xxiivv.com/ https://neonaut.neocities.org/directory/ Marijn&amp;rsquo;s Linkroll  </description>
+    </item>
+    
+  </channel>
+</rss>

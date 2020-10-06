@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://fsis.site/images/logo.png" />
+<title>Don&#39;t take fractal fireball notes written in FORTH | fsis.site 🐴</title>
+<meta name="title" content="Don&#39;t take fractal fireball notes written in FORTH" />
+<meta name="description" content="Programming   1991: A SERVER-SIDE WEB FRAMEWORK WRITTEN IN FORTH, github
+BECAUSE OF COURSE
+  Articles   Don&rsquo;t take notes with a laptop
+TL;DR: This has been told again and again, but hand-writing lecture notes makes you remember them better (and makes your hands hurt a lot)
+  Floppycasts!
+TL;DR: if satisfied with absolutely terrifying quality, you can fit about 22 minutes of MP3 speech on a floppy disk, or about 30 minutes of Opus (approximately as terrifying but in a different way)" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Don&#39;t take fractal fireball notes written in FORTH" />
+<meta property="og:description" content="Programming   1991: A SERVER-SIDE WEB FRAMEWORK WRITTEN IN FORTH, github
+BECAUSE OF COURSE
+  Articles   Don&rsquo;t take notes with a laptop
+TL;DR: This has been told again and again, but hand-writing lecture notes makes you remember them better (and makes your hands hurt a lot)
+  Floppycasts!
+TL;DR: if satisfied with absolutely terrifying quality, you can fit about 22 minutes of MP3 speech on a floppy disk, or about 30 minutes of Opus (approximately as terrifying but in a different way)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://fsis.site/blog/2019-06-29/" />
+<meta property="og:image" content="http://fsis.site/images/logo.png"/>
+<meta property="article:published_time" content="2019-06-29T11:00:00+00:00" />
+<meta property="article:modified_time" content="2019-06-29T11:00:00+00:00" /><meta property="og:site_name" content="fsis.site 🐴" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://fsis.site/images/logo.png"/>
+
+<meta name="twitter:title" content="Don&#39;t take fractal fireball notes written in FORTH"/>
+<meta name="twitter:description" content="Programming   1991: A SERVER-SIDE WEB FRAMEWORK WRITTEN IN FORTH, github
+BECAUSE OF COURSE
+  Articles   Don&rsquo;t take notes with a laptop
+TL;DR: This has been told again and again, but hand-writing lecture notes makes you remember them better (and makes your hands hurt a lot)
+  Floppycasts!
+TL;DR: if satisfied with absolutely terrifying quality, you can fit about 22 minutes of MP3 speech on a floppy disk, or about 30 minutes of Opus (approximately as terrifying but in a different way)"/>
+
+
+
+<meta itemprop="name" content="Don&#39;t take fractal fireball notes written in FORTH">
+<meta itemprop="description" content="Programming   1991: A SERVER-SIDE WEB FRAMEWORK WRITTEN IN FORTH, github
+BECAUSE OF COURSE
+  Articles   Don&rsquo;t take notes with a laptop
+TL;DR: This has been told again and again, but hand-writing lecture notes makes you remember them better (and makes your hands hurt a lot)
+  Floppycasts!
+TL;DR: if satisfied with absolutely terrifying quality, you can fit about 22 minutes of MP3 speech on a floppy disk, or about 30 minutes of Opus (approximately as terrifying but in a different way)">
+<meta itemprop="datePublished" content="2019-06-29T11:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-06-29T11:00:00+00:00" />
+<meta itemprop="wordCount" content="232">
+<meta itemprop="image" content="http://fsis.site/images/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --color-brand: #da5f51;
+    --color-fade: #848586;
+    --color-background: #eee0cb;
+    --color-background-alt: #baa898;
+    --color-body-text: #280003;
+    --color-header-text: #da5f51;
+  }
+  @media(prefers-color-scheme: light) {
+    :root {
+      --color-brand: #da5f51;
+      --color-fade: #848586;
+      --color-background: #eee0cb;
+      --color-background-alt: #baa898;
+      --color-body-text: #280003;
+      --color-header-text: #da5f51;
+    }
+  }
+  @media(prefers-color-scheme: dark) {
+    :root {
+      --color-background: #280003;
+      --color-background-alt: #da5f51;
+      --color-body-text: #eee0cb;
+      --color-header-text: #da5f51;
+    }
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: var(--color-background);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--color-body-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--color-header-text);
+  }
+
+  a {
+    color: var(--color-brand);
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+    height: 100px;
+    z-index: 1;
+  }
+  h2.title {
+    margin: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  .back-title {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  main {
+    z-index: 1;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: var(--color-background-alt);
+  }
+
+  pre code {
+    color: var(--color-body-text);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  blockquote {
+    border-left: 1px solid var(--color-brand);
+    color: var(--color-body-text);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    font-size: 12px;
+  }
+
+  .helptext {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+  .errorlist {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--color-brand);
+  }
+</style>
+
+</head>
+
+<body>
+  <header><aside class="back-title">
+  fsis.site 🐴
+</aside>
+<h2 class="title">fsis.site 🐴</h2>
+<nav><a href="/">/home/fsi</a>
+
+<a href="/blog">./blog</a>
+
+
+<a href="/books/">./books</a>
+
+<a href="/links/">./links</a>
+
+<a href="/random/">./random</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Don&#39;t take fractal fireball notes written in FORTH</h1>
+<p>
+  <i>
+    <time datetime='2019-06-29' pubdate>
+      29 Jun, 2019
+    </time>
+  </i>
+</p>
+
+<content>
+  <h2 id="programming">Programming</h2>
+<ul>
+<li>
+<p><a href="http://www.1-9-9-1.com/">1991: A SERVER-SIDE WEB FRAMEWORK WRITTEN IN FORTH</a>, <a href="https://github.com/urlysses/1991">github</a></p>
+<p>BECAUSE OF COURSE</p>
+</li>
+</ul>
+<h2 id="articles">Articles</h2>
+<ul>
+<li>
+<p><a href="https://www.scientificamerican.com/article/a-learning-secret-don-t-take-notes-with-a-laptop/">Don&rsquo;t take notes with a laptop</a></p>
+<p>TL;DR: This has been told again and again, but hand-writing lecture notes makes you remember them better (and makes your hands hurt a lot)</p>
+</li>
+<li>
+<p><a href="http://ajroach42.com/floppycasts-1-44mb-podcasts/">Floppycasts!</a></p>
+<p>TL;DR: if satisfied with <a href="http://ajroach42.com/floppycast-examples/">absolutely terrifying quality</a>, you can fit about 22 minutes of MP3 speech on a floppy disk, or about 30 minutes of Opus (approximately as terrifying but in a different way)</p>
+<p>I might&rsquo;ve done something like this if I wasn&rsquo;t so ashamed of my own voice.</p>
+</li>
+<li>
+<p><a href="https://www.wired.com/story/why-a-grape-turns-into-a-fireball-in-a-microwave/">Why grape turns into a fireball in a microwave</a></p>
+</li>
+<li>
+<p><a href="https://www.syfy.com/syfywire/no-oumuamua-is-not-an-alien-spaceship-it-might-be-even-weirder">Oumuamua is not an alien spaceship</a>, but <a href="https://www.centauri-dreams.org/2019/06/20/can-we-catch-the-next-oumuamua/">Can we catch the next &ldquo;Oumuamua&rdquo;?</a></p>
+</li>
+<li>
+<p><a href="https://invertedpassion.com/life-is-fractal-markets-are-square/">Life is fractal, but markets are square</a> — very insightful</p>
+</li>
+</ul>
+<h2 id="just-useful">Just useful</h2>
+<ul>
+<li><a href="https://www.privacytools.io/">https://www.privacytools.io/</a></li>
+</ul>
+<h2 id="music">Music</h2>
+<ul>
+<li>
+<p><a href="https://movingfurniturerecords.bandcamp.com/album/states">Tapage &amp; Gareth Davis - STATES (bandcamp)</a></p>
+<p>This is some music produced by an <em>electronic setup</em> that is allowed to self-influence and produce music until it reaches some stable state.</p>
+<p>There&rsquo;s also a sax player providing some atmosphere.</p>
+</li>
+</ul>
+<h2 id="games">Games</h2>
+<ul>
+<li>
+<p><a href="https://store.steampowered.com/app/1098770/The_Crimson_Diamond/">The Crimson Diamond</a></p>
+<p>A text-parser adventure game in a quite fitting EGA graphics style.
+The free demo can be rough around the edges, but I hope the game will be finished some day.</p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=BOjkYv1ikqo">Interview with Philip Oliver of Oliver Twins (youtube)</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=aqdr9q1cXW4">Interview with Andrew Oliver of Oliver Twins (youtube)</a></p>
+</li>
+</ul>
+<h2 id="art">Art</h2>
+<ul>
+<li>
+<p><a href="https://twitter.com/wiki_tmnt">Wiki Titles Signable to TMNT Theme Song</a></p>
+</li>
+<li>
+<p><a href="https://twitter.com/Dangmill_11/status/1086210444543504384">Everyday life of modern Ghibli couples</a></p>
+</li>
+</ul>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><small>Copyright © 2020, FSi</small>
+<br />
+Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

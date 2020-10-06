@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://fsis.site/images/logo.png" />
+<title>Untitled Goose Post | fsis.site 🐴</title>
+<meta name="title" content="Untitled Goose Post" />
+<meta name="description" content="Programming   CollapseOS
+TL;DR: Someone is making an 8-bit OS just in case to be useful in post-collapse scenarios.
+ With a copy of this project, a capable and creative person should be able to manage to build and install Collapse OS without external resources (i.e. internet) on a machine of her design, built from scavenged parts with low-tech tools.
+   Don&rsquo;t Look Into The Light
+TL;DR:" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Untitled Goose Post" />
+<meta property="og:description" content="Programming   CollapseOS
+TL;DR: Someone is making an 8-bit OS just in case to be useful in post-collapse scenarios.
+ With a copy of this project, a capable and creative person should be able to manage to build and install Collapse OS without external resources (i.e. internet) on a machine of her design, built from scavenged parts with low-tech tools.
+   Don&rsquo;t Look Into The Light
+TL;DR:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://fsis.site/blog/2019-10-13/" />
+<meta property="og:image" content="http://fsis.site/images/logo.png"/>
+<meta property="article:published_time" content="2019-10-13T20:33:39+00:00" />
+<meta property="article:modified_time" content="2019-10-13T20:33:39+00:00" /><meta property="og:site_name" content="fsis.site 🐴" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://fsis.site/images/logo.png"/>
+
+<meta name="twitter:title" content="Untitled Goose Post"/>
+<meta name="twitter:description" content="Programming   CollapseOS
+TL;DR: Someone is making an 8-bit OS just in case to be useful in post-collapse scenarios.
+ With a copy of this project, a capable and creative person should be able to manage to build and install Collapse OS without external resources (i.e. internet) on a machine of her design, built from scavenged parts with low-tech tools.
+   Don&rsquo;t Look Into The Light
+TL;DR:"/>
+
+
+
+<meta itemprop="name" content="Untitled Goose Post">
+<meta itemprop="description" content="Programming   CollapseOS
+TL;DR: Someone is making an 8-bit OS just in case to be useful in post-collapse scenarios.
+ With a copy of this project, a capable and creative person should be able to manage to build and install Collapse OS without external resources (i.e. internet) on a machine of her design, built from scavenged parts with low-tech tools.
+   Don&rsquo;t Look Into The Light
+TL;DR:">
+<meta itemprop="datePublished" content="2019-10-13T20:33:39+00:00" />
+<meta itemprop="dateModified" content="2019-10-13T20:33:39+00:00" />
+<meta itemprop="wordCount" content="358">
+<meta itemprop="image" content="http://fsis.site/images/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --color-brand: #da5f51;
+    --color-fade: #848586;
+    --color-background: #eee0cb;
+    --color-background-alt: #baa898;
+    --color-body-text: #280003;
+    --color-header-text: #da5f51;
+  }
+  @media(prefers-color-scheme: light) {
+    :root {
+      --color-brand: #da5f51;
+      --color-fade: #848586;
+      --color-background: #eee0cb;
+      --color-background-alt: #baa898;
+      --color-body-text: #280003;
+      --color-header-text: #da5f51;
+    }
+  }
+  @media(prefers-color-scheme: dark) {
+    :root {
+      --color-background: #280003;
+      --color-background-alt: #da5f51;
+      --color-body-text: #eee0cb;
+      --color-header-text: #da5f51;
+    }
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: var(--color-background);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--color-body-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--color-header-text);
+  }
+
+  a {
+    color: var(--color-brand);
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+    height: 100px;
+    z-index: 1;
+  }
+  h2.title {
+    margin: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  .back-title {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  main {
+    z-index: 1;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: var(--color-background-alt);
+  }
+
+  pre code {
+    color: var(--color-body-text);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  blockquote {
+    border-left: 1px solid var(--color-brand);
+    color: var(--color-body-text);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    font-size: 12px;
+  }
+
+  .helptext {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+  .errorlist {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--color-brand);
+  }
+</style>
+
+</head>
+
+<body>
+  <header><aside class="back-title">
+  fsis.site 🐴
+</aside>
+<h2 class="title">fsis.site 🐴</h2>
+<nav><a href="/">/home/fsi</a>
+
+<a href="/blog">./blog</a>
+
+
+<a href="/books/">./books</a>
+
+<a href="/links/">./links</a>
+
+<a href="/random/">./random</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Untitled Goose Post</h1>
+<p>
+  <i>
+    <time datetime='2019-10-13' pubdate>
+      13 Oct, 2019
+    </time>
+  </i>
+</p>
+
+<content>
+  <h2 id="programming">Programming</h2>
+<ul>
+<li>
+<p><a href="https://collapseos.org/">CollapseOS</a></p>
+<p>TL;DR: Someone is making an 8-bit OS <em>just in case</em> to be useful in <em>post-collapse scenarios</em>.</p>
+<blockquote>
+<p>With a copy of this project, a capable and creative person should be able to manage to build and install Collapse OS without external resources (i.e. internet) on a machine of her design, built from scavenged parts with low-tech tools.</p>
+</blockquote>
+</li>
+<li>
+<p><a href="https://christine.website/blog/dont-look-into-the-light-2019-10-06">Don&rsquo;t Look Into The Light</a></p>
+<p>TL;DR:</p>
+<blockquote>
+<p>making something microservices out of the gate is a terrible idea</p>
+</blockquote>
+<p>Again, I can relate to this on <em>so many levels</em></p>
+</li>
+<li>
+<p><a href="https://idealo.github.io/imagededup/">imagededup</a></p>
+<p>A python tool to remove duplicates from a large collection of images.</p>
+<p>So <strong>FINALLY</strong> I can tidy up my &ldquo;anime&rdquo; and &ldquo;wallpapers&rdquo; folders!</p>
+<small>
+  (who am i kidding, they are the same folder)
+</small>
+</li>
+</ul>
+<h2 id="articles">Articles</h2>
+<ul>
+<li>
+<p><a href="http://mikepennisi.com/blog/2019/the-web-cant-survive-a-monoculture/">The Web Can&rsquo;t Survive a Monoculture</a></p>
+<p>TL;DR: another anti-chrome <del>rant</del>^W argument (and another one I agree with).</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Common_kestrel">Common Kestrel</a></p>
+<blockquote>
+<p>This species is able to see near ultraviolet light, allowing the birds to detect the urine trails around rodent burrows as they shine in an ultraviolet colour in the sunlight</p>
+</blockquote>
+</li>
+<li>
+<p><a href="https://leahneukirchen.org/blog/archive/2019/10/ken-thompson-s-unix-password.html">Ken Thompson&rsquo;s elusive Unix password is finally hacked</a></p>
+<p>&hellip;and it&rsquo;s a chess move in descriptive notation.</p>
+</li>
+<li>
+<p><a href="https://thezvi.wordpress.com/2019/10/08/artifact-what-went-wrong/">Artifact: What Went Wrong?</a></p>
+<p>Never played Artifact (nor Dota 2), and this article lists some reasons why (beyond being merely interesting).</p>
+</li>
+</ul>
+<h2 id="artpictures">Art/Pictures</h2>
+<ul>
+<li>
+<p><a href="https://www.instagram.com/vanessastockard/">Nice cat paintings by Vanessa Stockard</a></p>
+<p>Especially <a href="https://www.instagram.com/p/B3YNQTsFlk9/">this</a>, <a href="https://www.instagram.com/p/B3L7BfCFZd6/">this</a>, and <a href="https://www.instagram.com/p/B0FMQLqlhzk/">this</a>.</p>
+</li>
+</ul>
+<h2 id="music">Music</h2>
+<ul>
+<li>
+<p><a href="https://doomvs.bandcamp.com/album/earthless">Doom:VS — Earthless</a></p>
+<p>Here&rsquo;s an album that I&rsquo;ve listened to a while back, but gave it another go this week (now that I actually have it on an actual CD).</p>
+<p>What can I say, it is a very neat funeral doom album, sad, beautiful, powerful and sometimes overwhelming.</p>
+<p>My favorite quote is probably from the end of the album:</p>
+<blockquote>
+<p>Now that you&rsquo;re gone<!-- raw HTML omitted -->
+Winter&rsquo;s come<!-- raw HTML omitted -->
+Please let me rise<!-- raw HTML omitted -->
+Please let me feel<!-- raw HTML omitted --></p>
+</blockquote>
+</li>
+<li>
+<p><a href="https://sandbreaker.bandcamp.com/">Sandbreaker - Sandbreaker EP</a></p>
+<p>Given I&rsquo;m still reading Dune and it&rsquo;s sequels, the timing on this EP couldn&rsquo;t be more perfect.</p>
+<p>It&rsquo;s a doom/death album that&rsquo;s clearly inspired by Dune, and is otherwise a regular doom/death thing.</p>
+</li>
+</ul>
+<h2 id="games">Games</h2>
+<ul>
+<li>Finished <a href="https://goose.game/">Untitled Goose Game</a> on switch. Fun little game.</li>
+</ul>
+<h2 id="projects">Projects</h2>
+<ul>
+<li>
+<p><a href="https://medium.com/syncedreview/what-does-broken-sound-like-first-ever-audio-dataset-of-malfunctioning-industrial-machines-b4f8f6d81dd7">First-Ever Audio Dataset of Malfunctioning Industrial Machines</a></p>
+<p>They say it&rsquo;s for machine learning, I say it&rsquo;s a sick sample pack</p>
+<p><a href="https://arxiv.org/pdf/1909.09347.pdf">paper</a>,
+<a href="https://zenodo.org/record/3384388#.XZISikZKjb0">download</a></p>
+</li>
+</ul>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><small>Copyright © 2020, FSi</small>
+<br />
+Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://fsis.site/images/logo.png" />
+<title>Middle of November | fsis.site 🐴</title>
+<meta name="title" content="Middle of November" />
+<meta name="description" content="Programming   Laser-Based Audio Injection on Voice-Controllable Systems
+TL;DR:
+ By shining the laser through the window at microphones inside smart speakers, tablets, or phones, a far away attacker can remotely send inaudible and potentially invisible commands which are then acted upon by Alexa, Portal, Google assistant or Siri.
+ or, as they say in Russia, РЕШЕТО
+  Text Rendering Hates You
+Fun quote:
+ Also have you heard of Animated SVG Fonts?" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Middle of November" />
+<meta property="og:description" content="Programming   Laser-Based Audio Injection on Voice-Controllable Systems
+TL;DR:
+ By shining the laser through the window at microphones inside smart speakers, tablets, or phones, a far away attacker can remotely send inaudible and potentially invisible commands which are then acted upon by Alexa, Portal, Google assistant or Siri.
+ or, as they say in Russia, РЕШЕТО
+  Text Rendering Hates You
+Fun quote:
+ Also have you heard of Animated SVG Fonts?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://fsis.site/blog/2019-11-16/" />
+<meta property="og:image" content="http://fsis.site/images/logo.png"/>
+<meta property="article:published_time" content="2019-11-16T12:37:59+00:00" />
+<meta property="article:modified_time" content="2019-11-16T12:37:59+00:00" /><meta property="og:site_name" content="fsis.site 🐴" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://fsis.site/images/logo.png"/>
+
+<meta name="twitter:title" content="Middle of November"/>
+<meta name="twitter:description" content="Programming   Laser-Based Audio Injection on Voice-Controllable Systems
+TL;DR:
+ By shining the laser through the window at microphones inside smart speakers, tablets, or phones, a far away attacker can remotely send inaudible and potentially invisible commands which are then acted upon by Alexa, Portal, Google assistant or Siri.
+ or, as they say in Russia, РЕШЕТО
+  Text Rendering Hates You
+Fun quote:
+ Also have you heard of Animated SVG Fonts?"/>
+
+
+
+<meta itemprop="name" content="Middle of November">
+<meta itemprop="description" content="Programming   Laser-Based Audio Injection on Voice-Controllable Systems
+TL;DR:
+ By shining the laser through the window at microphones inside smart speakers, tablets, or phones, a far away attacker can remotely send inaudible and potentially invisible commands which are then acted upon by Alexa, Portal, Google assistant or Siri.
+ or, as they say in Russia, РЕШЕТО
+  Text Rendering Hates You
+Fun quote:
+ Also have you heard of Animated SVG Fonts?">
+<meta itemprop="datePublished" content="2019-11-16T12:37:59+00:00" />
+<meta itemprop="dateModified" content="2019-11-16T12:37:59+00:00" />
+<meta itemprop="wordCount" content="241">
+<meta itemprop="image" content="http://fsis.site/images/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --color-brand: #da5f51;
+    --color-fade: #848586;
+    --color-background: #eee0cb;
+    --color-background-alt: #baa898;
+    --color-body-text: #280003;
+    --color-header-text: #da5f51;
+  }
+  @media(prefers-color-scheme: light) {
+    :root {
+      --color-brand: #da5f51;
+      --color-fade: #848586;
+      --color-background: #eee0cb;
+      --color-background-alt: #baa898;
+      --color-body-text: #280003;
+      --color-header-text: #da5f51;
+    }
+  }
+  @media(prefers-color-scheme: dark) {
+    :root {
+      --color-background: #280003;
+      --color-background-alt: #da5f51;
+      --color-body-text: #eee0cb;
+      --color-header-text: #da5f51;
+    }
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: var(--color-background);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--color-body-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--color-header-text);
+  }
+
+  a {
+    color: var(--color-brand);
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+    height: 100px;
+    z-index: 1;
+  }
+  h2.title {
+    margin: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  .back-title {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  main {
+    z-index: 1;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: var(--color-background-alt);
+  }
+
+  pre code {
+    color: var(--color-body-text);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  blockquote {
+    border-left: 1px solid var(--color-brand);
+    color: var(--color-body-text);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    font-size: 12px;
+  }
+
+  .helptext {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+  .errorlist {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--color-brand);
+  }
+</style>
+
+</head>
+
+<body>
+  <header><aside class="back-title">
+  fsis.site 🐴
+</aside>
+<h2 class="title">fsis.site 🐴</h2>
+<nav><a href="/">/home/fsi</a>
+
+<a href="/blog">./blog</a>
+
+
+<a href="/books/">./books</a>
+
+<a href="/links/">./links</a>
+
+<a href="/random/">./random</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Middle of November</h1>
+<p>
+  <i>
+    <time datetime='2019-11-16' pubdate>
+      16 Nov, 2019
+    </time>
+  </i>
+</p>
+
+<content>
+  <h2 id="programming">Programming</h2>
+<ul>
+<li>
+<p><a href="https://lightcommands.com/">Laser-Based Audio Injection on Voice-Controllable Systems</a></p>
+<p>TL;DR:</p>
+<blockquote>
+<p>By shining the laser through the window at microphones inside smart speakers, tablets, or phones, a far away attacker can remotely send inaudible and potentially invisible commands which are then acted upon by Alexa, Portal, Google assistant or Siri.</p>
+</blockquote>
+<p>or, as they say in Russia, РЕШЕТО</p>
+</li>
+<li>
+<p><a href="https://gankra.github.io/blah/text-hates-you/">Text Rendering Hates You</a></p>
+<p>Fun quote:</p>
+<blockquote>
+<p>Also have you heard of Animated SVG Fonts? No? Good.</p>
+</blockquote>
+</li>
+<li>
+<p>Also, <a href="https://lord.io/blog/2019/text-editing-hates-you-too/">Text Editing Hates You Too</a></p>
+</li>
+<li>
+<p><a href="https://devblogs.microsoft.com/oldnewthing/20191106-00/?p=103066">How can I have a C++ function that returns different types depending on what the caller wants?</a></p>
+<p>TL;DR: [picture of a possum screaming in anxiety]</p>
+</li>
+</ul>
+<h2 id="articles">Articles</h2>
+<ul>
+<li>
+<p><a href="https://thereader.mitpress.mit.edu/the-fantasy-of-opting-out/">The Fantasy of Opting Out</a></p>
+<p>TL;DR: Can&rsquo;t run away from the monopolists</p>
+</li>
+<li>
+<p><a href="http://widespacer.blogspot.com/2016/03/the-lost-key-of-qwerty.html">The Lost Key of QWERTY</a></p>
+<p>TL;DR: it&rsquo;s ⋮</p>
+</li>
+<li>
+<p><a href="https://slatestarcodex.com/2019/11/04/samsara/">Samsara</a></p>
+<p>A nice short story/koan by Alexander Scott</p>
+</li>
+</ul>
+<h2 id="artpictures">Art/Pictures</h2>
+<ul>
+<li><a href="https://publicdomainreview.org/collections/photographs-of-japanese-sword-guards-1916/">Photographs of Japanese sword guards</a></li>
+</ul>
+<h2 id="music">Music</h2>
+<ul>
+<li>
+<p><a href="https://www.rarenoiserecords.com/slobber-pup">Slobber Pup - Black Aces</a> (<a href="https://www.discogs.com/Slobber-Pup-Black-Aces/release/4483639">discogs</a>)</p>
+<p>An hour of hard psychedelic rock improvisations by some very skilled jazz musicians. I have a CD, and do not regret buying it in the slightest.</p>
+<p>(Their second album is more of a free jazz thing than this one; not as recommended)</p>
+</li>
+</ul>
+<h2 id="books">Books</h2>
+<ul>
+<li>
+<p><a href="https://www.simonandschuster.com/books/Goliath/Matt-Stoller/9781501183089">Goliath by Matt Stoller</a></p>
+<p>Speaking of monopolies, here&rsquo;s a book on the history of fighting them.</p>
+</li>
+</ul>
+<h2 id="games">Games</h2>
+<ul>
+<li>
+<p>The History of Faery Tale Adventure (speaking of the games I&rsquo;d love to strim some day)</p>
+<ul>
+<li><a href="https://medium.com/@dreamertalin/the-faery-tale-adventure-a-personal-history-4fae0617a18d">Part 1</a></li>
+<li><a href="https://medium.com/@dreamertalin/the-history-of-faery-tale-adventure-2-c3a17ac02378">Part 2</a></li>
+<li><a href="https://medium.com/@dreamertalin/faery-tale-adventure-3-c6a34d5e34fa">Part 3</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="random">Random</h2>
+<ul>
+<li><a href="https://rpg.stackexchange.com/questions/158749/what-is-the-maximum-number-of-weapons-you-can-draw-in-one-turn">What is the maximum number of weapons you can draw in one turn?</a> #dnd #hard-science</li>
+</ul>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><small>Copyright © 2020, FSi</small>
+<br />
+Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

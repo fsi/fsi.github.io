@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://fsis.site/images/logo.png" />
+<title>A bunch of links about lerna/npm/typescript integration | fsis.site 🐴</title>
+<meta name="title" content="A bunch of links about lerna/npm/typescript integration" />
+<meta name="description" content="A bunch of links about lerna/npm/typescript integration  https://blog.logrocket.com/the-complete-guide-to-publishing-a-react-package-to-npm/ https://dev.to/andypotts/creating-a-reusable-component-library-with-react-storybook-and-webpack-2ple https://medium.com/dailyjs/building-a-react-component-with-webpack-publish-to-npm-deploy-to-github-guide-6927f60b3220 https://medium.com/@NiGhTTraX/how-to-set-up-a-typescript-monorepo-with-lerna-c6acda7d4559 https://medium.com/@serhiihavrylenko/monorepo-setup-with-lerna-typescript-babel-7-and-other-part-1-ac60eeccba5f https://webman.pro/blog/how-to-setup-typescript-path-aliases-in-lerna-monorepo/  " />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="A bunch of links about lerna/npm/typescript integration" />
+<meta property="og:description" content="A bunch of links about lerna/npm/typescript integration  https://blog.logrocket.com/the-complete-guide-to-publishing-a-react-package-to-npm/ https://dev.to/andypotts/creating-a-reusable-component-library-with-react-storybook-and-webpack-2ple https://medium.com/dailyjs/building-a-react-component-with-webpack-publish-to-npm-deploy-to-github-guide-6927f60b3220 https://medium.com/@NiGhTTraX/how-to-set-up-a-typescript-monorepo-with-lerna-c6acda7d4559 https://medium.com/@serhiihavrylenko/monorepo-setup-with-lerna-typescript-babel-7-and-other-part-1-ac60eeccba5f https://webman.pro/blog/how-to-setup-typescript-path-aliases-in-lerna-monorepo/  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://fsis.site/random/lerna-npm/" />
+<meta property="og:image" content="http://fsis.site/images/logo.png"/>
+<meta property="article:published_time" content="2020-09-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-04T00:00:00+00:00" /><meta property="og:site_name" content="fsis.site 🐴" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://fsis.site/images/logo.png"/>
+
+<meta name="twitter:title" content="A bunch of links about lerna/npm/typescript integration"/>
+<meta name="twitter:description" content="A bunch of links about lerna/npm/typescript integration  https://blog.logrocket.com/the-complete-guide-to-publishing-a-react-package-to-npm/ https://dev.to/andypotts/creating-a-reusable-component-library-with-react-storybook-and-webpack-2ple https://medium.com/dailyjs/building-a-react-component-with-webpack-publish-to-npm-deploy-to-github-guide-6927f60b3220 https://medium.com/@NiGhTTraX/how-to-set-up-a-typescript-monorepo-with-lerna-c6acda7d4559 https://medium.com/@serhiihavrylenko/monorepo-setup-with-lerna-typescript-babel-7-and-other-part-1-ac60eeccba5f https://webman.pro/blog/how-to-setup-typescript-path-aliases-in-lerna-monorepo/  "/>
+
+
+
+<meta itemprop="name" content="A bunch of links about lerna/npm/typescript integration">
+<meta itemprop="description" content="A bunch of links about lerna/npm/typescript integration  https://blog.logrocket.com/the-complete-guide-to-publishing-a-react-package-to-npm/ https://dev.to/andypotts/creating-a-reusable-component-library-with-react-storybook-and-webpack-2ple https://medium.com/dailyjs/building-a-react-component-with-webpack-publish-to-npm-deploy-to-github-guide-6927f60b3220 https://medium.com/@NiGhTTraX/how-to-set-up-a-typescript-monorepo-with-lerna-c6acda7d4559 https://medium.com/@serhiihavrylenko/monorepo-setup-with-lerna-typescript-babel-7-and-other-part-1-ac60eeccba5f https://webman.pro/blog/how-to-setup-typescript-path-aliases-in-lerna-monorepo/  ">
+<meta itemprop="datePublished" content="2020-09-04T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-09-04T00:00:00+00:00" />
+<meta itemprop="wordCount" content="13">
+<meta itemprop="image" content="http://fsis.site/images/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --color-brand: #da5f51;
+    --color-fade: #848586;
+    --color-background: #eee0cb;
+    --color-background-alt: #baa898;
+    --color-body-text: #280003;
+    --color-header-text: #da5f51;
+  }
+  @media(prefers-color-scheme: light) {
+    :root {
+      --color-brand: #da5f51;
+      --color-fade: #848586;
+      --color-background: #eee0cb;
+      --color-background-alt: #baa898;
+      --color-body-text: #280003;
+      --color-header-text: #da5f51;
+    }
+  }
+  @media(prefers-color-scheme: dark) {
+    :root {
+      --color-background: #280003;
+      --color-background-alt: #da5f51;
+      --color-body-text: #eee0cb;
+      --color-header-text: #da5f51;
+    }
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: var(--color-background);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--color-body-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--color-header-text);
+  }
+
+  a {
+    color: var(--color-brand);
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+    height: 100px;
+    z-index: 1;
+  }
+  h2.title {
+    margin: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  .back-title {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  main {
+    z-index: 1;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: var(--color-background-alt);
+  }
+
+  pre code {
+    color: var(--color-body-text);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  blockquote {
+    border-left: 1px solid var(--color-brand);
+    color: var(--color-body-text);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    font-size: 12px;
+  }
+
+  .helptext {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+  .errorlist {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--color-brand);
+  }
+</style>
+
+</head>
+
+<body>
+  <header><aside class="back-title">
+  fsis.site 🐴
+</aside>
+<h2 class="title">fsis.site 🐴</h2>
+<nav><a href="/">/home/fsi</a>
+
+<a href="/blog">./blog</a>
+
+
+<a href="/books/">./books</a>
+
+<a href="/links/">./links</a>
+
+<a href="/random/">./random</a>
+
+</nav>
+</header>
+  <main>
+
+<content>
+  <h1 id="a-bunch-of-links-about-lernanpmtypescript-integration">A bunch of links about lerna/npm/typescript integration</h1>
+<ul>
+<li><a href="https://blog.logrocket.com/the-complete-guide-to-publishing-a-react-package-to-npm/">https://blog.logrocket.com/the-complete-guide-to-publishing-a-react-package-to-npm/</a></li>
+<li><a href="https://dev.to/andypotts/creating-a-reusable-component-library-with-react-storybook-and-webpack-2ple">https://dev.to/andypotts/creating-a-reusable-component-library-with-react-storybook-and-webpack-2ple</a></li>
+<li><a href="https://medium.com/dailyjs/building-a-react-component-with-webpack-publish-to-npm-deploy-to-github-guide-6927f60b3220">https://medium.com/dailyjs/building-a-react-component-with-webpack-publish-to-npm-deploy-to-github-guide-6927f60b3220</a></li>
+<li><a href="https://medium.com/@NiGhTTraX/how-to-set-up-a-typescript-monorepo-with-lerna-c6acda7d4559">https://medium.com/@NiGhTTraX/how-to-set-up-a-typescript-monorepo-with-lerna-c6acda7d4559</a></li>
+<li><a href="https://medium.com/@serhiihavrylenko/monorepo-setup-with-lerna-typescript-babel-7-and-other-part-1-ac60eeccba5f">https://medium.com/@serhiihavrylenko/monorepo-setup-with-lerna-typescript-babel-7-and-other-part-1-ac60eeccba5f</a></li>
+<li><a href="https://webman.pro/blog/how-to-setup-typescript-path-aliases-in-lerna-monorepo/">https://webman.pro/blog/how-to-setup-typescript-path-aliases-in-lerna-monorepo/</a></li>
+</ul>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><small>Copyright © 2020, FSi</small>
+<br />
+Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

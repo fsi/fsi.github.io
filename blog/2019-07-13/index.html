@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://fsis.site/images/logo.png" />
+<title>Ottoman floating point zip bombs on the moon | fsis.site 🐴</title>
+<meta name="title" content="Ottoman floating point zip bombs on the moon" />
+<meta name="description" content="Programming   Floating point routines for 6502 by Woz
+(direct link)
+  A better zip bomb; NON-RECURSIVE zip-bombs that extract from 42 kB to 5.5 GB, from 10MB to 281TB, or from 46MB to 4.5PB (last one is Zip64 and not as compatible). Non-recursive means you get that amount of date in a single extract operation.
+Not quite useful information, but interesting nonetheless.
+  Articles   Designing the First Full-Time Human Habitat on the Moon, original press-release" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Ottoman floating point zip bombs on the moon" />
+<meta property="og:description" content="Programming   Floating point routines for 6502 by Woz
+(direct link)
+  A better zip bomb; NON-RECURSIVE zip-bombs that extract from 42 kB to 5.5 GB, from 10MB to 281TB, or from 46MB to 4.5PB (last one is Zip64 and not as compatible). Non-recursive means you get that amount of date in a single extract operation.
+Not quite useful information, but interesting nonetheless.
+  Articles   Designing the First Full-Time Human Habitat on the Moon, original press-release" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://fsis.site/blog/2019-07-13/" />
+<meta property="og:image" content="http://fsis.site/images/logo.png"/>
+<meta property="article:published_time" content="2019-07-13T11:55:19+00:00" />
+<meta property="article:modified_time" content="2019-07-13T11:55:19+00:00" /><meta property="og:site_name" content="fsis.site 🐴" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://fsis.site/images/logo.png"/>
+
+<meta name="twitter:title" content="Ottoman floating point zip bombs on the moon"/>
+<meta name="twitter:description" content="Programming   Floating point routines for 6502 by Woz
+(direct link)
+  A better zip bomb; NON-RECURSIVE zip-bombs that extract from 42 kB to 5.5 GB, from 10MB to 281TB, or from 46MB to 4.5PB (last one is Zip64 and not as compatible). Non-recursive means you get that amount of date in a single extract operation.
+Not quite useful information, but interesting nonetheless.
+  Articles   Designing the First Full-Time Human Habitat on the Moon, original press-release"/>
+
+
+
+<meta itemprop="name" content="Ottoman floating point zip bombs on the moon">
+<meta itemprop="description" content="Programming   Floating point routines for 6502 by Woz
+(direct link)
+  A better zip bomb; NON-RECURSIVE zip-bombs that extract from 42 kB to 5.5 GB, from 10MB to 281TB, or from 46MB to 4.5PB (last one is Zip64 and not as compatible). Non-recursive means you get that amount of date in a single extract operation.
+Not quite useful information, but interesting nonetheless.
+  Articles   Designing the First Full-Time Human Habitat on the Moon, original press-release">
+<meta itemprop="datePublished" content="2019-07-13T11:55:19+00:00" />
+<meta itemprop="dateModified" content="2019-07-13T11:55:19+00:00" />
+<meta itemprop="wordCount" content="425">
+<meta itemprop="image" content="http://fsis.site/images/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --color-brand: #da5f51;
+    --color-fade: #848586;
+    --color-background: #eee0cb;
+    --color-background-alt: #baa898;
+    --color-body-text: #280003;
+    --color-header-text: #da5f51;
+  }
+  @media(prefers-color-scheme: light) {
+    :root {
+      --color-brand: #da5f51;
+      --color-fade: #848586;
+      --color-background: #eee0cb;
+      --color-background-alt: #baa898;
+      --color-body-text: #280003;
+      --color-header-text: #da5f51;
+    }
+  }
+  @media(prefers-color-scheme: dark) {
+    :root {
+      --color-background: #280003;
+      --color-background-alt: #da5f51;
+      --color-body-text: #eee0cb;
+      --color-header-text: #da5f51;
+    }
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: var(--color-background);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--color-body-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--color-header-text);
+  }
+
+  a {
+    color: var(--color-brand);
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+    height: 100px;
+    z-index: 1;
+  }
+  h2.title {
+    margin: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  .back-title {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  main {
+    z-index: 1;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: var(--color-background-alt);
+  }
+
+  pre code {
+    color: var(--color-body-text);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  blockquote {
+    border-left: 1px solid var(--color-brand);
+    color: var(--color-body-text);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    font-size: 12px;
+  }
+
+  .helptext {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+  .errorlist {
+    color: var(--color-header-text);
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--color-brand);
+  }
+</style>
+
+</head>
+
+<body>
+  <header><aside class="back-title">
+  fsis.site 🐴
+</aside>
+<h2 class="title">fsis.site 🐴</h2>
+<nav><a href="/">/home/fsi</a>
+
+<a href="/blog">./blog</a>
+
+
+<a href="/books/">./books</a>
+
+<a href="/links/">./links</a>
+
+<a href="/random/">./random</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Ottoman floating point zip bombs on the moon</h1>
+<p>
+  <i>
+    <time datetime='2019-07-13' pubdate>
+      13 Jul, 2019
+    </time>
+  </i>
+</p>
+
+<content>
+  <h2 id="programming">Programming</h2>
+<ul>
+<li>
+<p><a href="https://tinyletter.com/jamesbowman/letters/i-have-found-an-excellent-programmer-named-steve-wozniac">Floating point routines for 6502 by Woz</a></p>
+<p><a href="https://archive.org/details/dr_dobbs_journal_vol_01/page/n207">(direct link)</a></p>
+</li>
+<li>
+<p><a href="https://www.bamsoftware.com/hacks/zipbomb/">A better zip bomb</a>;
+<strong>NON-RECURSIVE</strong> zip-bombs that extract from 42 kB to 5.5 GB, from 10MB to 281TB, or from 46MB to 4.5PB (last one is Zip64 and not as compatible). Non-recursive means you get that amount of date in a single extract operation.</p>
+<p>Not quite <em>useful</em> information, but <em>interesting</em> nonetheless.</p>
+</li>
+</ul>
+<h2 id="articles">Articles</h2>
+<ul>
+<li>
+<p><a href="https://www.citylab.com/design/2019/04/moon-village-som-mit-esa-space-urbanism-planning-habitat/587482/">Designing the First Full-Time Human Habitat on the Moon</a>, <a href="http://www.som.com/news/som_releases_concept_for_moon_village_the_first_permanent_human_settlement_on_the_lunar_surface">original press-release</a></p>
+<p>Just a proposal, though.</p>
+</li>
+<li>
+<p><a href="https://srconstantin.wordpress.com/2019/02/25/humans-who-are-not-concentrating-are-not-general-intelligences/">Humans Who Are Not Concentrating Are Not General Intelligences</a></p>
+<p>TL;DR: As I continue to dig through the swarm of articles that appeared in the wake of OpenAI&rsquo;s GPT-2, here&rsquo;s another fine one. Quite humbling, as it finds that we humans ourselves cannot be considered general intelligences unless we concentrate enough.</p>
+</li>
+<li>
+<p><a href="https://www.technologyreview.com/s/612913/a-philosopher-argues-that-an-ai-can-never-be-an-artist/">A philosopher argues that an AI can’t be an artist</a></p>
+<p>TL;DR: in other news, water is still wet</p>
+<p>NB: it&rsquo;s behind a paywall, but I didn&rsquo;t read the whole article anyway.</p>
+</li>
+<li>
+<p><a href="https://www.atlasobscura.com/articles/coquina-fort-in-florida">The Mystery of Florida&rsquo;s Cannonball-eating Fort</a></p>
+<p>TL;DR: it was made of coquina; that&rsquo;s a stone that&rsquo;s while visually similar to sandstone has different structure and behaves more like foam under stress.</p>
+<p>&ldquo;Saved you a click,&rdquo; I&rsquo;d say, but there are some nice pictures of the cannonball and bullet holes in the coquina walls of the castle.</p>
+</li>
+<li>
+<p>Speaking of Moon, <a href="https://www.npr.org/2019/07/08/736212760/moon-rocks-still-awe-and-scientist-hope-to-get-more">NASA Will Open Pristine, Sealed Samples of Moon Rock</a></p>
+<p>If I read that right, they&rsquo;ll open one of the six pristine sealed moon rocks that were sealed 50 years ago in hope that future technologies may tell us more about them (and that future happens to be now). We&rsquo;re unlikely to get more pristine untouched moon rock samples until at least 2024, but I sure hope we will.</p>
+</li>
+</ul>
+<h2 id="games">Games</h2>
+<ul>
+<li>
+<p><a href="https://adventuron.itch.io/excalibur">Excalibur</a> / <a href="https://adventuron.io/">Adventuron</a></p>
+<p>An online text adventure, in ZX Spectrum visual style, and a tool to create one of your own!</p>
+<p>(Didn&rsquo;t dig into this deep enough, sadly; might write an update later)</p>
+</li>
+<li>
+<p>Grid Cartographer — a tool to create maps for your tabletop and computer games</p>
+<p><a href="https://store.steampowered.com/app/684690/Grid_Cartographer_4/">Steam</a>, <a href="http://gridcartographer.com/">Site</a>, <a href="https://twitter.com/gridcarto">Twitter</a></p>
+<p>(via <a href="https://twitter.com/ben_304">@ben_304</a>)</p>
+</li>
+</ul>
+<h2 id="music">Music</h2>
+<ul>
+<li>
+<p><a href="https://felixmarc.bandcamp.com/album/substance">Felix Marc - Substance</a></p>
+<p>(bandcamp, <em>also available on Spotify, iTunes, amazon music, YouTube Music, Google play, Deezer, any Russian MP3 pirate server and NSA databases</em>)</p>
+<p>Sad and beautiful dark wave/synth pop album from Germany, that you have to buy digitally and burn on your own CD-r</p>
+</li>
+<li>
+<p><a href="https://thegrindmother.bandcamp.com/">Grindmother - Age of Destruction</a></p>
+<p>And for something completely different, here&rsquo;s some old-style grindcore, so old-style their vocalist is, like, 70 years old or something.</p>
+</li>
+</ul>
+<h2 id="art">Art</h2>
+<ul>
+<li>
+<p><a href="https://i.imgur.com/fL2OMSh.png">Miniature Russian garbage dump</a> - unfortunately, I couldn&rsquo;t find the source</p>
+</li>
+<li>
+<p><a href="https://www.atlasobscura.com/places/ottoman-bird-palaces">Ottoman Bird Palaces</a></p>
+</li>
+</ul>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><small>Copyright © 2020, FSi</small>
+<br />
+Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
