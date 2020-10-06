@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, FSi</copyright>
-    <lastBuildDate>Tue, 09 Jun 2020 14:34:00 +0300</lastBuildDate><atom:link href="http://fsis.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://fsis.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrated to Hugo</title>
+      <link>http://fsis.site/blog/2020-10-06/</link>
+      <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://fsis.site/blog/2020-10-06/</guid>
+      <description>This is something I&amp;rsquo;ve wanted to do for a long time (11 months? omg), but here it is at last. This site/blog is now powered by Hugo. I tried to keep stuff similar to how it was before, while adding my own flair.
+The feed URL has been changed. I guess you know that if you&amp;rsquo;re reading this, but make sure to update your RSS reader otherwise.
+Also, as the sources for this site is now in plain markdown, I&amp;rsquo;ve merged them with my (previously private) notes, so now you can enjoy such masterpieces as my meat marinades and add-srt-to-mp4.</description>
+    </item>
+    
     <item>
       <title>Letter from Italy</title>
       <link>http://fsis.site/blog/2020-06-19-letter-from-italy/</link>

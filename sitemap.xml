@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://fsis.site/blog/</loc>
+    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fsis.site/blog/2020-10-06/</loc>
+    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fsis.site/</loc>
+    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://fsis.site/random/</loc>
     <lastmod>2020-09-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://fsis.site/random/meat-marinades/</loc>
-    <lastmod>2020-09-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://fsis.site/</loc>
     <lastmod>2020-09-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -70,11 +80,6 @@
   <url>
     <loc>http://fsis.site/links/20200619144021/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://fsis.site/blog/</loc>
-    <lastmod>2020-06-09T14:34:00+03:00</lastmod>
   </url>
   
   <url>
