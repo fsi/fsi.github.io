@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>./links on fsis.site 🐴</title>
-    <link>http://fsis.site/links/</link>
+    <link>https://fsis.site/links/</link>
     <description>Recent content in ./links on fsis.site 🐴</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, FSi</copyright>
-    <lastBuildDate>Mon, 12 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://fsis.site/links/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/links/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Links from 2020-10-12</title>
-      <link>http://fsis.site/links/20201012135900/</link>
+      <link>https://fsis.site/links/20201012135900/</link>
       <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://fsis.site/links/20201012135900/</guid>
+      <guid>https://fsis.site/links/20201012135900/</guid>
       <description>First off, hackernews brought me a link to awfice - a suite of minimal (read: one-liner data-url minimal) &amp;ldquo;office&amp;rdquo; tools. Text editor, presentations, quick drawing thingie and a spreadsheet (the spreadsheet being the most sketchy of four). Also on github. From there, I was clicking around sent — another minimal presentations tool, this time from suckless.org. I mostly know them for their dwm window manager, which is so small you&amp;rsquo;re supposed to recompile it to change the config.</description>
     </item>
     
     <item>
       <title>Links from 2020-06-19</title>
-      <link>http://fsis.site/links/20200619144021/</link>
+      <link>https://fsis.site/links/20200619144021/</link>
       <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://fsis.site/links/20200619144021/</guid>
+      <guid>https://fsis.site/links/20200619144021/</guid>
       <description>Links from 2020-06-19  Advice to young web developers, beesbuzz.biz On cultures that build, scholars-stage.blogspot.com  </description>
     </item>
     
     <item>
       <title>links/webrings</title>
-      <link>http://fsis.site/links/webrings/</link>
+      <link>https://fsis.site/links/webrings/</link>
       <pubDate>Thu, 01 Jan 1970 03:00:00 +0300</pubDate>
       
-      <guid>http://fsis.site/links/webrings/</guid>
+      <guid>https://fsis.site/links/webrings/</guid>
       <description>links/webrings Links to other collections of links
 unchecked Still have to check these
  welcome to dreamwiki https://webring.xxiivv.com/ https://neonaut.neocities.org/directory/ Marijn&amp;rsquo;s Linkroll  </description>

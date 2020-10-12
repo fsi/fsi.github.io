@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on fsis.site 🐴</title>
-    <link>http://fsis.site/tags/</link>
+    <link>https://fsis.site/tags/</link>
     <description>Recent content in Tags on fsis.site 🐴</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, FSi</copyright>
-    <lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://fsis.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>books:scifi</title>
-      <link>http://fsis.site/tags/booksscifi/</link>
+      <link>https://fsis.site/tags/booksscifi/</link>
       <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://fsis.site/tags/booksscifi/</guid>
+      <guid>https://fsis.site/tags/booksscifi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>to-read</title>
-      <link>http://fsis.site/tags/to-read/</link>
+      <link>https://fsis.site/tags/to-read/</link>
       <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://fsis.site/tags/to-read/</guid>
+      <guid>https://fsis.site/tags/to-read/</guid>
       <description></description>
     </item>
     
     <item>
       <title>books:history</title>
-      <link>http://fsis.site/tags/bookshistory/</link>
+      <link>https://fsis.site/tags/bookshistory/</link>
       <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://fsis.site/tags/bookshistory/</guid>
+      <guid>https://fsis.site/tags/bookshistory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>books:nature</title>
-      <link>http://fsis.site/tags/booksnature/</link>
+      <link>https://fsis.site/tags/booksnature/</link>
       <pubDate>Mon, 21 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://fsis.site/tags/booksnature/</guid>
+      <guid>https://fsis.site/tags/booksnature/</guid>
       <description></description>
     </item>
     
     <item>
       <title>review</title>
-      <link>http://fsis.site/tags/review/</link>
+      <link>https://fsis.site/tags/review/</link>
       <pubDate>Mon, 21 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://fsis.site/tags/review/</guid>
+      <guid>https://fsis.site/tags/review/</guid>
       <description></description>
     </item>
     

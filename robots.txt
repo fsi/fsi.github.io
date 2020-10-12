@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: http://fsis.site/sitemap.xml
+Sitemap: https://fsis.site/sitemap.xml

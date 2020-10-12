@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>./random on fsis.site 🐴</title>
-    <link>http://fsis.site/random/</link>
+    <link>https://fsis.site/random/</link>
     <description>Recent content in ./random on fsis.site 🐴</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, FSi</copyright>
-    <lastBuildDate>Tue, 29 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://fsis.site/random/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/random/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meat marinades</title>
-      <link>http://fsis.site/random/meat-marinades/</link>
+      <link>https://fsis.site/random/meat-marinades/</link>
       <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://fsis.site/random/meat-marinades/</guid>
+      <guid>https://fsis.site/random/meat-marinades/</guid>
       <description>Meat marinades For lamb  Peel and chop the garlic into fine pieces. Mix the garlic, rosemary, olive oil, and a pinch of salt and pepper in a shallow baking dish or another nonreactive dish. This marinade will penetrate the steaks for a tender result. Yogurt mint marinade: mix 1/2 cup whole milk yogurt, 2 cloves minced garlic, 2 tablespoons olive oil, 1/4 cup chopped mint, and salt and pepper to taste.</description>
     </item>
     
     <item>
       <title>A bunch of links about lerna/npm/typescript integration</title>
-      <link>http://fsis.site/random/lerna-npm/</link>
+      <link>https://fsis.site/random/lerna-npm/</link>
       <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://fsis.site/random/lerna-npm/</guid>
+      <guid>https://fsis.site/random/lerna-npm/</guid>
       <description>A bunch of links about lerna/npm/typescript integration  https://blog.logrocket.com/the-complete-guide-to-publishing-a-react-package-to-npm/ https://dev.to/andypotts/creating-a-reusable-component-library-with-react-storybook-and-webpack-2ple https://medium.com/dailyjs/building-a-react-component-with-webpack-publish-to-npm-deploy-to-github-guide-6927f60b3220 https://medium.com/@NiGhTTraX/how-to-set-up-a-typescript-monorepo-with-lerna-c6acda7d4559 https://medium.com/@serhiihavrylenko/monorepo-setup-with-lerna-typescript-babel-7-and-other-part-1-ac60eeccba5f https://webman.pro/blog/how-to-setup-typescript-path-aliases-in-lerna-monorepo/  </description>
     </item>
     
     <item>
       <title>How to add subtitle track to an mp4 file</title>
-      <link>http://fsis.site/random/add-srt-to-mp4/</link>
+      <link>https://fsis.site/random/add-srt-to-mp4/</link>
       <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://fsis.site/random/add-srt-to-mp4/</guid>
+      <guid>https://fsis.site/random/add-srt-to-mp4/</guid>
       <description>How to add subtitle track to an mp4 file This is hard to keep in memory, and the source page might get deleted (and ffmpeg&amp;rsquo;s cli is unlikely to change).
 Code:
 ffmpeg -i input.mp4 -i sub.srt -c:v copy -c:a copy -c:s mov_text -metadata:s:s:0 language=eng output.mp4 mp4 container works fine with .srt subtitles, with other formats remuxing to mkv might be necessary.
