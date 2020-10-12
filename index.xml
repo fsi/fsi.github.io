@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, FSi</copyright>
-    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://fsis.site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://fsis.site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links from 2020-10-12</title>
+      <link>http://fsis.site/links/20201012135900/</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://fsis.site/links/20201012135900/</guid>
+      <description>First off, hackernews brought me a link to awfice - a suite of minimal (read: one-liner data-url minimal) &amp;ldquo;office&amp;rdquo; tools. Text editor, presentations, quick drawing thingie and a spreadsheet (the spreadsheet being the most sketchy of four). Also on github. From there, I was clicking around sent — another minimal presentations tool, this time from suckless.org. I mostly know them for their dwm window manager, which is so small you&amp;rsquo;re supposed to recompile it to change the config.</description>
+    </item>
+    
     <item>
       <title>Migrated to Hugo</title>
       <link>http://fsis.site/blog/2020-10-06/</link>
@@ -455,7 +464,7 @@ It&amp;rsquo;s always interesting to read the reports made by people captivated 
     <item>
       <title>links/webrings</title>
       <link>http://fsis.site/links/webrings/</link>
-      <pubDate>Thu, 01 Jan 1970 05:00:00 +0500</pubDate>
+      <pubDate>Thu, 01 Jan 1970 03:00:00 +0300</pubDate>
       
       <guid>http://fsis.site/links/webrings/</guid>
       <description>links/webrings Links to other collections of links
