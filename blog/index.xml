@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, FSi</copyright>
-    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links for 2020-10-13</title>
+      <link>https://fsis.site/blog/20201013173555/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://fsis.site/blog/20201013173555/</guid>
+      <description> plug-n-pwn  Unfortunately Intel has placed large amounts of information about the Thunderbolt controllers and protocol under NDA, meaning that it has not been properly researched leading to a string of vulnerabilities over the years.
+  Vt Cup Of Water, No Water, Wasp   </description>
+    </item>
+    
     <item>
       <title>Migrated to Hugo</title>
       <link>https://fsis.site/blog/2020-10-06/</link>
