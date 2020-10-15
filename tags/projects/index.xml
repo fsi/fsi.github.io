@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>projects on fsis.site 🐴</title>
+    <link>https://fsis.site/tags/projects/</link>
+    <description>Recent content in projects on fsis.site 🐴</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2020, FSi</copyright>
+    <lastBuildDate>Thu, 15 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Toshiba Libretto 50CT project</title>
+      <link>https://fsis.site/random/libretto-project/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://fsis.site/random/libretto-project/</guid>
+      <description>Toshiba Libretto 50CT It&amp;rsquo;s an old (1997) laptop. It has Pentium-75 and 16MB of RAM. Its screen is 640x480 pixels big (sans a couple of dead ones). Mine lacks the port replicator, so the only connections I have are IR, PC Card and speaker ports. No floppy/CD drive either.
+My plans for it My plans on it depend on how broken it actually is, but I&amp;rsquo;m torn between a retro-gaming machine and a tiny off-the-grid workstation.</description>
+    </item>
+    
+    <item>
+      <title>«Smart» speaker project</title>
+      <link>https://fsis.site/random/speaker-project/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://fsis.site/random/speaker-project/</guid>
+      <description>«Smart» speaker project Provisional name: &amp;ldquo;hobos&amp;rdquo;
+Basic idea: dumb speaker + basic single-board pc (e.g. Pi Zero W) + linux with mpd ⇒ profit
+Hardware Done:
+ Very cheap USB powered speaker in &amp;ldquo;soundbar&amp;rdquo; form-factor (about $15) OrangePi Lite Some cheapo 8GB SD card Cheapo USB sound card (OrangePi lite has a line-out but the pads are microscopic) USB hub (to power both OrangePi and speaker)  Todo:
+ Heatsinks for the board (it gets really hot unless you throttle the CPU on every boot) * Check if my USB power supply is enough to power both board and the speaker :| * Put everything inside the speaker case (after some checking, it should all fit fine) ****  Software So far (2020-10-15), I have only flashed linux on it :|</description>
+    </item>
+    
+  </channel>
+</rss>

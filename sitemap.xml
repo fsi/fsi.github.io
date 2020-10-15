@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://fsis.site/links/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/random/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/links/20201015151001/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/tags/projects/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/tags/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/random/libretto-project/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/random/speaker-project/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fsis.site/blog/</loc>
     <lastmod>2020-10-13T00:00:00+00:00</lastmod>
   </url>
@@ -13,16 +53,6 @@
   </url>
   
   <url>
-    <loc>https://fsis.site/</loc>
-    <lastmod>2020-10-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fsis.site/links/</loc>
-    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://fsis.site/links/20201012135900/</loc>
     <lastmod>2020-10-12T00:00:00+00:00</lastmod>
   </url>
@@ -30,11 +60,6 @@
   <url>
     <loc>https://fsis.site/blog/2020-10-06/</loc>
     <lastmod>2020-10-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fsis.site/random/</loc>
-    <lastmod>2020-09-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -74,11 +99,6 @@
   
   <url>
     <loc>https://fsis.site/books/galactic-center-saga/</loc>
-    <lastmod>2020-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fsis.site/tags/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
   </url>
   
