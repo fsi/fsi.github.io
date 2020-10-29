@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, FSi</copyright>
-    <lastBuildDate>Sun, 25 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/links/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/links/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links from 2020-10-29</title>
+      <link>https://fsis.site/links/20201029212900/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://fsis.site/links/20201029212900/</guid>
+      <description>Links from 2020-10-29  Mobilizon, a libre alternative to facebook events. Main page. Taikyoku shogi, the wtf of chess Type in the exact number of machines to proceed Music: Cavaverman - 8-bit From Hell eslisp that compiles into plain js, looks neat TODO: Generating a gopher site with Hugo Dotfile madness  </description>
+    </item>
+    
     <item>
       <title>Links from 2020-10-25</title>
       <link>https://fsis.site/links/20201019145147/</link>
