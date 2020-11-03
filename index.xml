@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, FSi</copyright>
-    <lastBuildDate>Thu, 29 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links from 2020-11-03</title>
+      <link>https://fsis.site/links/20201102231617/</link>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://fsis.site/links/20201102231617/</guid>
+      <description>Links from 2020-11-03  Super! Lonely Terminal - a bunch of retro japanese stuff for PC98 (and generally, a very cute website) The dystopia of self-sovereign identity Book: Subprime Attention Crisis svicc - text editor for C64, an 8-bit vi clone  </description>
+    </item>
+    
+    <item>
+      <title>Random project ideas</title>
+      <link>https://fsis.site/random/ideadump/</link>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://fsis.site/random/ideadump/</guid>
+      <description>Random project ideas These are just ideas I am fiddling around.
+Hardware  ASCII video terminal, kit Chibiterm - STM32F030F4-VGA and this fork with VT100 emulation. Read: https://hw-by-design.blogspot.com/2018/07/low-cost-vga-terminal-module-project.html RC2014 Z80-MBC2  Software  learn forth make a game with pico8 wallpaper organizer podcast downloader / fix upodder  Other  Cigarbox guitar - actually in progress. Kinda. I have all the parts and none of the tools. Or a space to work in.</description>
+    </item>
+    
     <item>
       <title>Links from 2020-10-29</title>
       <link>https://fsis.site/links/20201029212900/</link>

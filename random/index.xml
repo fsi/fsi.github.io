@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, FSi</copyright>
-    <lastBuildDate>Thu, 15 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/random/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/random/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Random project ideas</title>
+      <link>https://fsis.site/random/ideadump/</link>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://fsis.site/random/ideadump/</guid>
+      <description>Random project ideas These are just ideas I am fiddling around.
+Hardware  ASCII video terminal, kit Chibiterm - STM32F030F4-VGA and this fork with VT100 emulation. Read: https://hw-by-design.blogspot.com/2018/07/low-cost-vga-terminal-module-project.html RC2014 Z80-MBC2  Software  learn forth make a game with pico8 wallpaper organizer podcast downloader / fix upodder  Other  Cigarbox guitar - actually in progress. Kinda. I have all the parts and none of the tools. Or a space to work in.</description>
+    </item>
+    
     <item>
       <title>Toshiba Libretto 50CT project</title>
       <link>https://fsis.site/random/libretto-project/</link>
