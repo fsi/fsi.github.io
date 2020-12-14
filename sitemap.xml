@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://fsis.site/blog/</loc>
+    <lastmod>2020-12-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/blog/december-2020-news/</loc>
+    <lastmod>2020-12-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/</loc>
+    <lastmod>2020-12-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fsis.site/links/</loc>
-    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/links/20201106121422/</loc>
+    <lastmod>2020-11-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -19,11 +39,6 @@
   
   <url>
     <loc>https://fsis.site/random/ideadump/</loc>
-    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fsis.site/</loc>
     <lastmod>2020-11-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -60,11 +75,6 @@
   <url>
     <loc>https://fsis.site/random/speaker-project/</loc>
     <lastmod>2020-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fsis.site/blog/</loc>
-    <lastmod>2020-10-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
