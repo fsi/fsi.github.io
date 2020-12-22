@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, FSi</copyright>
-    <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>7MB Terminator</title>
+      <link>https://fsis.site/blog/2020-12-21.terminator/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://fsis.site/blog/2020-12-21.terminator/</guid>
+      <description>Yesterday I was kinda bored and decided to test the limits of common video compression algorithms. I recall once seeing someone compress the whole Hackers movie into under 7MB to upload it, whole, on Mastodon. I&amp;rsquo;m sorry, whoever you are, I think I lost the link and I can&amp;rsquo;t seem to find it.
+I didn&amp;rsquo;t have the Hackers movie at hand (except that 7MB file that I&amp;rsquo;ve downloaded out of curiosity), but I did have The Terminator, so I decided to replicate the previous person&amp;rsquo;s achievement with a different movie.</description>
+    </item>
+    
     <item>
       <title>December 2020 post!</title>
       <link>https://fsis.site/blog/december-2020-news/</link>

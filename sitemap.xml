@@ -4,16 +4,31 @@
   
   <url>
     <loc>https://fsis.site/blog/</loc>
-    <lastmod>2020-12-14T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fsis.site/blog/december-2020-news/</loc>
-    <lastmod>2020-12-14T00:00:00+00:00</lastmod>
+    <loc>https://fsis.site/blog/2020-12-21.terminator/</loc>
+    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/tags/hacks/</loc>
+    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/tags/</loc>
+    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://fsis.site/</loc>
+    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/blog/december-2020-news/</loc>
     <lastmod>2020-12-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -29,7 +44,12 @@
   
   <url>
     <loc>https://fsis.site/random/</loc>
-    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fsis.site/random/raster-fonts/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -59,11 +79,6 @@
   
   <url>
     <loc>https://fsis.site/tags/projects/</loc>
-    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fsis.site/tags/</loc>
     <lastmod>2020-10-15T00:00:00+00:00</lastmod>
   </url>
   

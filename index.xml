@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, FSi</copyright>
-    <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>7MB Terminator</title>
+      <link>https://fsis.site/blog/2020-12-21.terminator/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://fsis.site/blog/2020-12-21.terminator/</guid>
+      <description>Yesterday I was kinda bored and decided to test the limits of common video compression algorithms. I recall once seeing someone compress the whole Hackers movie into under 7MB to upload it, whole, on Mastodon. I&amp;rsquo;m sorry, whoever you are, I think I lost the link and I can&amp;rsquo;t seem to find it.
+I didn&amp;rsquo;t have the Hackers movie at hand (except that 7MB file that I&amp;rsquo;ve downloaded out of curiosity), but I did have The Terminator, so I decided to replicate the previous person&amp;rsquo;s achievement with a different movie.</description>
+    </item>
+    
     <item>
       <title>December 2020 post!</title>
       <link>https://fsis.site/blog/december-2020-news/</link>
@@ -27,6 +37,15 @@ Random links! (BTW, you can follow my random links posts at the main RSS here)
       
       <guid>https://fsis.site/links/20201106121422/</guid>
       <description>Links from 2020-11-27  Music: ΠΟΛΙΣ by Subheim, €9 digitally Also music: Advent by Randal Collier-Ford, $7 digitally. It&amp;rsquo;s a lovecraftian / dark scifi dark ambient kind of album, if &amp;ldquo;cryochamber&amp;rdquo; label wasn&amp;rsquo;t enough of a hint. I liked the cover (but stayed for the music). Also also music: Memory 417 by In Quantum, also from cryo chamber. This one is more cyberpunk-ish. @teeny tiny vinyl dollhouse vinyl miniatures (not actually usable, just very cute) (TW: instagram)  </description>
+    </item>
+    
+    <item>
+      <title>Resources on raster fonts for microcontrollers</title>
+      <link>https://fsis.site/random/raster-fonts/</link>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://fsis.site/random/raster-fonts/</guid>
+      <description>Resources on raster fonts for microcontrollers  Raster Font Editor by CyLog software Unscii font, 8x8 and 8x16 varieties A bunch of fonts in C header format Bitmap font collection Custom fonts for microcontrollers  </description>
     </item>
     
     <item>
