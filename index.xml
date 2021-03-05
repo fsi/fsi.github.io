@@ -7,26 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, FSi</copyright>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Journaling, SciADV, Some more articles</title>
-      <link>https://fsis.site/blog/2021-02-05/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      <title>Mostly small web links and thoughts</title>
+      <link>https://fsis.site/blog/2021-03-05/</link>
+      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fsis.site/blog/2021-02-05/</guid>
-      <description>It&amp;rsquo;s been a while, eh.
-So I&amp;rsquo;ve been journaling. So far it&amp;rsquo;s been quite useful. Like a crutch, it helps me forget&amp;hellip; less.
-I&amp;rsquo;ve also been playing/reading visual noves from the Science Adventure series: so far I&amp;rsquo;m done with Chaos;Head and Steins;Gate, and on my way throught Robotics;Notes. As re-reading the same text for the nth time is quite boring, and the auto-skip feature in the latter seems to be broken (as in, skips not only the text I&amp;rsquo;ve already read, but EVERYTHING), the guide from Committee of Zero has been very useful.</description>
-    </item>
-    
-    <item>
-      <title>7MB Terminator</title>
-      <link>https://fsis.site/blog/2020-12-21.terminator/</link>
-      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://fsis.site/blog/2020-12-21.terminator/</guid>
-      <description>Yesterday I was kinda bored and decided to test the limits of common video compression algorithms. I recall once seeing someone compress the whole Hackers movie into under 7MB to upload it, whole, on Mastodon. I&amp;rsquo;m sorry, whoever you are, I think I lost the link and I can&amp;rsquo;t seem to find it.
-I didn&amp;rsquo;t have the Hackers movie at hand (except that 7MB file that I&amp;rsquo;ve downloaded out of curiosity), but I did have The Terminator, so I decided to replicate the previous person&amp;rsquo;s achievement with a different movie.</description>
+      <guid>https://fsis.site/blog/2021-03-05/</guid>
+      <description>The Small Web links  The Small Web is Beautiful The Small Web Against an Incredibly User-Hostile Web What is the Small Web? (TW: paywall) &amp;ldquo;User Engagement&amp;rdquo; Is Code for &amp;ldquo;Addiction&amp;rdquo;   also, neat discussion on hackernews.
+ I think a lot of people think they&amp;rsquo;re bakers, but you gotta realize, the moment you start sprinkling crack in the cookies, you&amp;rsquo;re not selling cookies anymore.
+     Life stuff Lotsa things happened in February.</description>
     </item>
     
     <item>
@@ -48,15 +38,6 @@ Random links! (BTW, you can follow my random links posts at the main RSS here)
       
       <guid>https://fsis.site/links/20201106121422/</guid>
       <description>Links from 2020-11-27  Music: ΠΟΛΙΣ by Subheim, €9 digitally Also music: Advent by Randal Collier-Ford, $7 digitally. It&amp;rsquo;s a lovecraftian / dark scifi dark ambient kind of album, if &amp;ldquo;cryochamber&amp;rdquo; label wasn&amp;rsquo;t enough of a hint. I liked the cover (but stayed for the music). Also also music: Memory 417 by In Quantum, also from cryo chamber. This one is more cyberpunk-ish. @teeny tiny vinyl dollhouse vinyl miniatures (not actually usable, just very cute) (TW: instagram)  </description>
-    </item>
-    
-    <item>
-      <title>Resources on raster fonts for microcontrollers</title>
-      <link>https://fsis.site/random/raster-fonts/</link>
-      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://fsis.site/random/raster-fonts/</guid>
-      <description>Resources on raster fonts for microcontrollers  Raster Font Editor by CyLog software Unscii font, 8x8 and 8x16 varieties A bunch of fonts in C header format Bitmap font collection Custom fonts for microcontrollers  </description>
     </item>
     
     <item>
@@ -124,8 +105,9 @@ My plans for it My plans on it depend on how broken it actually is, but I&amp;rs
       <guid>https://fsis.site/random/speaker-project/</guid>
       <description>«Smart» speaker project Provisional name: &amp;ldquo;hobos&amp;rdquo;
 Basic idea: dumb speaker + basic single-board pc (e.g. Pi Zero W) + linux with mpd ⇒ profit
-Timeline 2020-10-15  flashed linux onto it  2021-02-02  installed mpd, and ympd for gui mounted NFS share with music assembled in a temp. case  Hardware Done:
- Very cheap USB powered speaker in &amp;ldquo;soundbar&amp;rdquo; form-factor (about $15) OrangePi Lite Some cheapo 8GB SD card Cheapo USB sound card (OrangePi lite has a line-out but the pads are microscopic) USB hub (to power both OrangePi and speaker)  Todo:</description>
+Hardware Done:
+ Very cheap USB powered speaker in &amp;ldquo;soundbar&amp;rdquo; form-factor (about $15) OrangePi Lite Some cheapo 8GB SD card Cheapo USB sound card (OrangePi lite has a line-out but the pads are microscopic) USB hub (to power both OrangePi and speaker)  Todo:
+ Heatsinks for the board (it gets really hot unless you throttle the CPU on every boot) * Check if my USB power supply is enough to power both board and the speaker :| * Put everything inside the speaker case (after some checking, it should all fit fine) ****  Software So far (2020-10-15), I have only flashed linux on it :|</description>
     </item>
     
     <item>

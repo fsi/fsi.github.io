@@ -26,8 +26,9 @@ My plans for it My plans on it depend on how broken it actually is, but I&amp;rs
       <guid>https://fsis.site/random/speaker-project/</guid>
       <description>«Smart» speaker project Provisional name: &amp;ldquo;hobos&amp;rdquo;
 Basic idea: dumb speaker + basic single-board pc (e.g. Pi Zero W) + linux with mpd ⇒ profit
-Timeline 2020-10-15  flashed linux onto it  2021-02-02  installed mpd, and ympd for gui mounted NFS share with music assembled in a temp. case  Hardware Done:
- Very cheap USB powered speaker in &amp;ldquo;soundbar&amp;rdquo; form-factor (about $15) OrangePi Lite Some cheapo 8GB SD card Cheapo USB sound card (OrangePi lite has a line-out but the pads are microscopic) USB hub (to power both OrangePi and speaker)  Todo:</description>
+Hardware Done:
+ Very cheap USB powered speaker in &amp;ldquo;soundbar&amp;rdquo; form-factor (about $15) OrangePi Lite Some cheapo 8GB SD card Cheapo USB sound card (OrangePi lite has a line-out but the pads are microscopic) USB hub (to power both OrangePi and speaker)  Todo:
+ Heatsinks for the board (it gets really hot unless you throttle the CPU on every boot) * Check if my USB power supply is enough to power both board and the speaker :| * Put everything inside the speaker case (after some checking, it should all fit fine) ****  Software So far (2020-10-15), I have only flashed linux on it :|</description>
     </item>
     
   </channel>
